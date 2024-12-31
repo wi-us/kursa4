@@ -1,0 +1,36 @@
+.hero_portrait img
+{
+    width: 68px;
+    height: 40px;
+
+    border-radius: 0px;
+}
+
+.position-full-support img
+{
+    width: 16px;
+    padding-left: 7px;
+    padding-right: 7px;
+    
+}
+
+.logo-60x30 img
+{
+    width: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-40x40 img
+{
+    width: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-50x50 img
+{
+    width: 50px;
+    margin: 0;
+    padding: 0;
+}

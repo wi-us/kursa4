@@ -1,0 +1,167 @@
+@import "../s-colors.css";
+@import "../images.css";
+
+@font-face
+{
+    font-family: "InterVariable";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('styles//fonts//InterVariable.woff2') format("woff2");
+}
+
+html, body
+{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+}  
+
+.info-block
+{
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    background-color: var(--block-color-main);
+
+    width: calc(100% - var(--indent-inside) * 2 );
+
+    min-width: 15px;
+    min-height: 15px;
+
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7px 7px;
+    gap: 15px;
+    padding: var(--indent-inside);
+}
+
+.one-line-flex-block
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    
+        
+    gap: 7px 7px;
+    gap: 15px;
+}
+
+.column-flex-block
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 7px 7px;
+}
+
+:root
+{
+    --indent-outside: 25px;
+    --indent-inside: 15px;
+}
+
+h1
+{
+    font-size: 64px;
+    height: 96px;
+    letter-spacing: 80px;
+    vertical-align: center;
+    padding-left: 80px;
+}
+
+h2
+{
+    font-size: 36px;
+    height: 54px;
+}
+
+h3
+{
+    font-size: 24px;
+    height: 36px;
+}
+
+h4
+{
+    font-size: 16px;
+    height: 24px;
+}
+
+h5
+{
+    font-size: 12px;
+    height: 18px;
+}
+
+
+h1, h2, h3, h4, h5
+{
+    margin: 0;
+    color: white;
+    vertical-align: middle;
+}
+
+.victory
+{
+    height: 24px;
+    min-width: 14px;
+    background-color: var(--text-color-win);
+    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.victory h4
+{
+    color: black;
+    font-weight: 1000;
+}
+
+.victory h4::after
+{
+    content: "В";
+}
+
+.lose
+{
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    background-color: var(--text-color-lose);
+    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lose h4
+{
+    color: black;
+    font-weight: 1000;
+}
+
+.lose h4::after
+{
+    content: "П";
+}
+
+li
+{
+    list-style-type: none;
+}
+
+ul
+{
+    padding: 0;
+}

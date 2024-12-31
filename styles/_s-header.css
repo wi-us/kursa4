@@ -1,0 +1,125 @@
+@import "s-colors.css";
+
+:root
+{
+    --content-width: 1000px;
+    --content-width-min: 800px;
+    --content-width-max: 1000px;
+
+    --header-height: 50px;
+}
+
+
+header
+{
+    background-color: var(--header-color-background);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#header-box
+{
+    display: flex;
+    background-color: var(var(--header-color-alternative));
+    min-width: var(--content-width-min);
+    width: var(--content-width);
+    max-width: var(--content-width-max);
+
+	height: var(--header-height);
+    justify-content: space-between;
+    
+    align-items: stretch;
+}
+
+#header-logo
+{
+    order: 0;
+    width: 50px;
+    height: var(--header-height);
+
+    background-color: blue;
+}   
+
+.header-buttons-box
+{
+    order: 1;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    width: auto;
+
+    background-color: rgb(65, 202, 237);
+}
+
+.header-button
+{
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Inter';
+    font-weight: 700;
+    height: var(--header-height);
+}
+
+#header-profile-box
+{
+    order: 2;
+
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
+    
+    width: 200px;
+    height: 100%;
+
+    background-color: brown;
+}
+
+#header-profile-image
+{
+    order: 0;
+    width: var(--header-height);
+
+    background-color: rgb(64, 153, 29);
+}
+
+#header-profile-text-box
+{
+    order: 1;
+    width: 100px;
+
+    background-color: rgb(29, 153, 132);
+}
+
+#header-profile-logout
+{
+    order: 2;
+    width: 50px;
+
+    background-color: rgb(29, 153, 132);
+}
+
+#player-background
+{
+    display: flex;
+    background-color: black;
+    width: 100%;
+	height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#player-background-block
+{
+    background-color: aliceblue;
+    order: 1;
+    min-width: var(--content-width-min);
+    width: var(--content-width);
+    max-width: var(--content-width-max);
+
+    min-height: 1000px;
+    height: auto;
+}

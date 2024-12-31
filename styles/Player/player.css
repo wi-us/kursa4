@@ -1,0 +1,302 @@
+@import "../s-html.css";
+@import "../s-header.css";
+@import "../s-colors.css";
+@import "../images.css";
+
+main
+{
+    display: flex;
+    justify-content: left;
+}
+
+#player-background
+{
+    display: flex;
+    background-color: var(--body-color-background);
+    max-width: 100vw;
+    min-width: var(--content-width-min);
+    width: 100vw;
+	height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#player-background-block
+{
+    background-color: var(--body-color-background);
+    order: 1;
+    min-width: var(--content-width-min);
+    width: var(--content-width);
+    max-width: var(--content-width-max);
+
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    min-height: 1000px;
+    height: 100%;
+}
+
+#player-nickname-block
+{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#player-nickname-block h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#player-short-info-block
+{
+    height: 90px;
+    width: calc(100% - 2px - var(--indent-inside)*2);
+}
+
+#player-personal-info
+{
+    height: 90px;
+    width: 300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+
+#person
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: start;
+    flex-direction: column;
+    height: 70px;
+}
+
+#player-country-block
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    height: 16px;
+    order: 1;
+
+}
+
+#player-country-block img
+{
+    height: 16px;
+    margin-right: 7px;
+}
+
+
+#player-photo-block img
+{
+    width: 80px;
+    height: 80px;
+    order: 0;
+}
+
+
+#player-name-block
+{
+    order: 0;
+}
+
+#player-dob-block
+{
+    order: 2;
+}
+
+#player-team-info
+{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    
+}
+
+#player-team-block img
+{
+    padding-left: 15px;
+    border-left: 2px solid hsl(0, 0%, 20%);
+    width: 60px;
+}
+
+#player-team-block, #player-photo-block
+{
+    margin-right: var(--indent-inside);
+}
+
+#team-info-box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    height: 70px;
+}
+
+#player-position-block
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+
+    padding-bottom: 5px;
+}
+
+#player-team-name
+{
+    height: 45%;
+    padding-top: 5px;
+}
+
+#matches-and-winrate-block
+{
+    width: 100%;
+    justify-content: space-between;
+}
+
+#matches-block, #winrate-block
+{
+    width: calc(50% - 7px - var(--indent-inside)*2);
+}
+
+#favorite-heroes-hero-block
+{
+    gap: 10px;
+    align-items: center;
+}
+
+#favorite-heroes-block
+{
+    width: 246px;
+    height: 100%;
+    align-self: flex-start;
+    padding-bottom: 27px;
+
+}
+
+#favorite-heroes-text
+{
+    height: 67px;
+}
+
+#favorite-and-7-days-heroes-block
+{
+    width: 100%;
+}
+
+#seven-days-heroes-block
+{
+    width: calc(100% - 246px - 4px - 10px - var(--indent-inside)*2);
+    height: auto;
+    flex-wrap: wrap;
+}
+
+#seven-days-heroes-block-rating, #seven-days-heroes-block-tournaments
+{
+    width: calc(50%);
+    
+}
+
+#seven-days-heroes-block-rating
+{
+    border-right: 2px solid hsl(0, 0%, 20%);
+}
+#seven-days-heroes-block-rating-heroes, #seven-days-heroes-block-tournament-heroes
+{
+    width: 350px;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.block-name
+{
+    align-self: self-start;
+}
+
+.match-line
+{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#player-match-onle-line
+{
+    width: 100%;
+}
+.match-line tr
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    border-bottom: 2px solid hsl(0, 0%, 20%);
+}
+
+.match-line tr:last-child
+{
+    border-bottom: none;
+}
+
+
+.match-line th h4
+{
+    color: #ffffff;
+}
+
+.match-line td, .match-line th
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    
+    height: 46px;
+}
+
+
+#player-matches
+{
+    width: calc(100% - 2px - var(--indent-inside)*2);
+}
+
+#player-matches-column
+{
+    width: 100%;
+}
+
+#matches-number
+{
+    color: var(--header-color-selected);
+}
+
+#winrate-percents
+{
+    color: var(--text-color-win);
+}

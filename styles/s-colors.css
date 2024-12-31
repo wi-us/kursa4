@@ -1,0 +1,23 @@
+:root
+{
+    /* HEADER COLORS */
+    --header-color-background: hsl(0, 10%, 0%);
+    --header-color-alternative: gray;
+    --header-color-selected: hsl(51, 100%, 50%);
+
+    /* BODY COLORS */
+    --body-color-background: hsl(0, 0%, 3%);
+    --body-color-alternative: gray;
+
+    /* BUTTONS COLORS */
+    --button-color-background: hsl(0, 10%, 0%);
+    --button-color-alternative: hsl(0, 10%, 0%);
+
+    /* TEXT COLORS */
+    --text-color-main: hsl(0, 0%, 10%);
+    --text-color-lose: red;
+    --text-color-win: #00FF22;
+
+    /* BLOCKS */
+    --block-color-main: hsl(0, 0%, 7%)
+}

@@ -1,0 +1,237 @@
+@import "../s-html.css";
+@import "../s-header.css";
+@import "../s-colors.css";
+@import "../images.css";
+
+main
+{
+    display: flex;
+    justify-content: left;
+}
+
+#player-background
+{
+    display: flex;
+    background-color: var(--body-color-background);
+    max-width: 100vw;
+    min-width: var(--content-width-min);
+    width: 100vw;
+	height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#player-background-block
+{
+    background-color: var(--body-color-background);
+    order: 1;
+    min-width: var(--content-width-min);
+    width: var(--content-width);
+    max-width: var(--content-width-max);
+
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    min-height: 1000px;
+    height: 100%;
+}
+
+#player-nickname-block
+{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+#player-nickname-block h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#short-team-info
+{
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - var(--indent-inside) * 2);
+}
+
+#maps-list
+{
+    justify-content: start;
+    align-items: center;
+    width: calc(100% - var(--indent-inside) * 2);
+}
+
+.match_map
+{
+    padding: 5px;
+}
+
+#map-4
+{
+    background-color: #ffffff;
+}
+
+#map-4 h5
+{
+    color: black;
+}
+
+#map-4 img
+{
+    content: url("/resourses/spirit-logo-black.png");
+}
+
+.mstat_radiant_hero, .mstat_dire_hero
+{
+    width: 80px;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.mstat_radiant_hero img, .mstat_dire_hero img
+{
+    width: 80px;
+}
+
+.mstat_radiant_hero h5, .mstat_dire_hero h5
+{
+    color: black;
+    
+    margin: 5px;
+}
+
+.gold
+{
+    gap: 0;
+}
+
+.gold img
+{
+    width: 20px;
+}
+
+
+.mstat_dire_hero,  .mstat_dire_hero h5
+{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+
+}
+
+#after-match-stats
+{   
+    display: flex;
+    justify-content: center;
+    
+    width: calc(100% - 30px);
+}
+
+.match_team_stats_hero
+{
+    width: calc(100% - 80px * 5 - 15px );
+    
+}
+
+#teams-stats
+{
+    gap: 25px;
+}
+
+.victory h4::after
+{
+    content: "победа";
+}
+
+#after-match-stats
+{
+    justify-content: left;
+    align-items: start;
+}
+
+.abilities img
+{
+    height: 25px;
+}
+
+.item img
+{
+    height: 32px;
+}
+
+.hero-chosen-items, .hero-chosen-abilities
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#chosen_abilities_boxes
+{
+    width: calc(100% - var(--indent-inside) * 2);
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#chosen_abilities_box, #chosen_abilities_boxes
+{
+    
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+#hero-builds-c1
+{
+    width: calc(100% - var(--indent-inside) * 2);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-builds-radiant
+{
+    justify-content: start;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.hero-builds-dire
+{
+    justify-content: start;
+    background-color: #000000;
+    padding: 15px;
+}
+
+.hero-builds-radiant h5
+{
+    color: #000000;
+}
+
+.hero-builds-radiant
+{
+    gap: 7px;
+}
+
+.hero_portrait
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero_portrait, .hero-chosen-abilities, .hero-chosen-items
+{
+    gap: 7px;
+}

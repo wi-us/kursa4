@@ -1,0 +1,365 @@
+@import url(constants.css);
+@import url(assets.css);
+
+
+
+/*
+    Страница
+*/
+
+.page-content
+{
+    width: 1000px;
+    height: 100%;
+    
+    padding-top: 74px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    position: relative;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+/*
+    Общие параметры
+*/
+
+
+.player-photo-w84-h84
+{
+    width: 84px;
+    height: 84px;
+    content: url("../resourses/miposhka_face.png");
+}
+
+.country-w20-h15
+{
+    content: url("../resourses/flag20x15.png");
+    width: 20px;
+    height: 15px;
+}
+
+.titan-w84-h84
+{
+    content: url("../resourses/titan84x84.png");
+    width: 84px;
+    height: 84px;
+}
+
+.team-logo-w84-h84
+{
+    width: 84px;
+    height: 84px;
+    content: url("../resourses/spirit-logo-white.png");
+}
+
+/*
+    Шаблоны
+*/
+
+
+
+.page-name
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    width: 100%;
+    height: 64px;
+    padding: 10px 0px 10px 15px;
+    gap: 15px;
+}
+.result
+{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.score
+{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.page-name h1
+{
+    color: black;
+    text-align: center;
+    height: auto;
+    width: 690px;
+}
+
+.maps
+{
+    position: absolute;
+    left: 40px;
+    top: 139px;
+
+    width: 920px;
+    height: 54px;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.map
+{
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+
+    background-color: #090909;
+}
+
+.map img
+{
+    filter: invert();
+}
+
+.map:hover
+{
+    filter: invert();
+}
+
+.selected
+{
+    filter: invert();
+}
+
+#match-tech-info
+{
+    position: absolute;
+    left: 40px;
+    top: calc(134px + 69px);
+    gap: 15px;
+    width: 300px;
+    height: 141px;
+    align-items: start;
+    justify-content: start;
+}
+
+.mti-text
+{
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#match-heroes
+{
+    position: absolute;
+    left: 350px;
+    top: calc(134px + 69px);
+
+    width: 610px;
+    height: 455px;
+
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+
+}
+
+#match-map
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(285px + 69px);
+
+    width: 300px;
+    height: 304px;
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#match-graphic
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(599px + 69px);
+
+    width: 920px;
+    height: 280px;
+        background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+}
+
+#match-items-skills-stats
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(889px + 69px);
+
+    width: 920px;
+    height: 675px;
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+}
+
+.gold-image
+{
+    width: 21px;
+    height: 13px;
+
+    content: url("../resourses/gold.png");
+}
+
+.titan-w84-h84
+{
+    width: 30px;
+    height: 30px;
+}
+
+.player-rank
+{
+    position: relative;
+}
+
+.player-rank h5
+{
+    width: 30px;
+    height: 14px;
+    position: absolute;
+    top: 22px;
+    text-align: center;
+}
+
+.match-heroes-nick-rank
+{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-icon-w57-h32
+{
+    width: 57px;
+    height: 32px;
+    content: url("../resourses/enchantress_horz.webp");
+}
+
+.match-hero-role
+{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.match-heroes-card
+{
+    width: 290px;
+    height: 83px;  
+    padding: 10px;
+    gap: 10px;
+    background-color: #111111;
+}
+
+.match-heroes-nick-hero, .match-heroes-kda-gold
+{
+    justify-content: space-between ;
+    align-items: center;
+    gap: 10px;
+}
+
+.match-heroes-gold
+{
+    align-items: center;
+}
+
+.aspect-w16-h16
+{
+    width: 16px;
+    height: 16px;
+    content: url("../resourses/aspect.png");
+}
+
+.talent-w32-h32
+{
+    width: 32px;
+    height: 32px;
+    content: url("../resourses/talents.png");
+}
+
+.hero-nickname, .aspect-talent
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.player-talent
+{
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 41px;
+}
+
+.skill-image-w24-h24
+{
+    width: 24px;
+    height: 24px;
+    content: url("../resourses/enchantress_impetus.webp");
+}
+
+.item-image-w34-h24
+{
+    width: 34px;
+    height: 24px;
+    content: url("../resourses/item-w24-h24.png");
+}
+
+.skills, .items
+{
+    gap: 5px;
+}
+
+.player-items-skills-card
+{
+    background-color: #111111;
+    width: 445px;
+    height: 127px;
+    padding: 5px;
+    gap: 10px;
+}
+
+#match-items-skills-stats
+{
+    gap: 10px;
+}
+
+.buid-team-clmn
+{
+    gap: 5px;
+}
+
+.download-pdf-box:hover
+{
+    filter: invert();
+}
+

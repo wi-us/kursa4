@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Team</title>
+    <title>Player</title>
 
     <meta charset="utf-8">
     <link rel="icon" type="image/ico" href="favicon.ico"/>
@@ -9,52 +9,1077 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/Player/player.css" type="text/css"/>
+    <link rel="stylesheet" href="../style/header-1000.css" type="text/css"/ >
+    <link rel="stylesheet" href="../style/team-1000.css" type="text/css"/>
   </head>
+  <header class="h-desktop">
+    <div id="h-box">
+      <img class="team-logo-w44-h44 black" href="#">
+      <nav class="nav-menu">
+        <ul>
+          <a href="../pages/players.html"><li class="nav-button"><h4>Игроки</h4></li></a>
+          <a href="../pages/tournaments.html"><li class="nav-button"><h4>Турниры</h4></li></a>
+          <a href="../pages/teams.html"><li class="nav-button"><h4>Команды</h4></li></a>
+          <a href="../pages/matches.html"><li class="nav-button"><h4>Тренировки</h4></li></a>
+        </ul>
+      </nav>
+      <a href="../pages/authorization.html"><img class="logout-w44-h44 black"></a>
+    </div>
+    <div id="h-box-mobile">
+      <div class="hamb-logo fldir-row">
+        <div class="hamburger">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        <img class="team-logo-w44-h44 black" href="#">
+      </div>
+      <div class="download-pdf-box">
+        <h4>Скачать статистику</h4>
+        <img class="pdf-w44-h44" href="#">
+      </div>
+    </div>
+  </header>
   <body>
     <main>
-      <div id="header-box">
-        <div id="header-logo">
-            <!-- Лого -->
-             <img src="../resourses/spirit-logo-black.png">
+      <div class="page-content" id="player-content">
+        <div class="page-name">
+          <div class="result fldir-row">
+            <div class="team-name-frame fldir-row">
+              <img class="team-logo-w44-h44">
+              <h1 class="team-name">TEAM SPIRIT</h1>
+            </div>
+            <h1 class="ranking">#111</h1>
+          </div>
+          <div class="download-pdf-box" id="page-name-pdf">
+            <h4>Скачать статистику</h4>
+            <img class="pdf-w44-h44" href="#">
+          </div>
         </div>
-        <ul id="header-buttons-box">
-            <li class="header-button">
-                <!-- Игроки -->
-                 <a href="../pages/players.html">Игроки</a>
-            </li>
-            <li class="header-button">
-                <!-- Команды -->
-                
-                <a href="../pages/teams.html">Команды</a>
-            </li>
-            <li class="header-button">
-                <!-- Турниры -->
-                
-                <a href="../pages/tournaments.html">Турниры</a>
-            </li>
-            <li class="header-button">
-                <!-- Тренировки -->
-                
-                <a href="../pages/matches.html">Тренировки</a>
-            </li>
-        </ul>
+        <section class="content-block fldir-clmn" id="team-roster">
+          <h2>Состав</h2>
+          <div class="team-roster-cards fldir-clmn">
+            <div class="team-roster-card fldir-clmn">
+              <div class="fldir-clmn team-player-name">
+                <div class="fldir-row">
+                  <h3>Miposhka</h3>
+                  <img class="role-pos5-icon-w16-h17">
+                </div>
+                <div class="fldir-row">
+                  <img class="country-w20-h15">
+                  <h4>Ярослав Найдёнов</h4>
+                </div>
+              </div>
+              <div class="fldir-row team-player-items">
+                <img class="player-photo-w84-h84">
+                <div class="fldir-clmn player-heroes">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                </div>
+                <div class="fldir-clmn player-short-info">
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>В команде с:</h5>
+                    <h4>30 ноября 2017</h4>
+                  </div>
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>Матчей:</h5>
+                    <h4>1234</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-roster-card fldir-clmn">
+              <div class="fldir-clmn">
+                <div class="fldir-row">
+                  <h3>Miposhka</h3>
+                  <img class="role-pos5-icon-w16-h17">
+                </div>
+                <div class="fldir-row">
+                  <img class="country-w20-h15">
+                  <h4>Ярослав Найдёнов</h4>
+                </div>
+              </div>
+              <div class="fldir-row">
+                <img class="player-photo-w84-h84">
+                <div class="fldir-clmn player-heroes">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                </div>
+                <div class="fldir-clmn player-short-info">
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>В команде с:</h5>
+                    <h4>30 ноября 2017</h4>
+                  </div>
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>Матчей:</h5>
+                    <h4>1234</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-roster-card fldir-clmn">
+              <div class="fldir-clmn">
+                <div class="fldir-row">
+                  <h3>Miposhka</h3>
+                  <img class="role-pos5-icon-w16-h17">
+                </div>
+                <div class="fldir-row">
+                  <img class="country-w20-h15">
+                  <h4>Ярослав Найдёнов</h4>
+                </div>
+              </div>
+              <div class="fldir-row">
+                <img class="player-photo-w84-h84">
+                <div class="fldir-clmn player-heroes">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                </div>
+                <div class="fldir-clmn player-short-info">
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>В команде с:</h5>
+                    <h4>30 ноября 2017</h4>
+                  </div>
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>Матчей:</h5>
+                    <h4>1234</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-roster-card fldir-clmn">
+              <div class="fldir-clmn">
+                <div class="fldir-row">
+                  <h3>Miposhka</h3>
+                  <img class="role-pos5-icon-w16-h17">
+                </div>
+                <div class="fldir-row">
+                  <img class="country-w20-h15">
+                  <h4>Ярослав Найдёнов</h4>
+                </div>
+              </div>
+              <div class="fldir-row">
+                <img class="player-photo-w84-h84">
+                <div class="fldir-clmn player-heroes">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                </div>
+                <div class="fldir-clmn player-short-info">
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>В команде с:</h5>
+                    <h4>30 ноября 2017</h4>
+                  </div>
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>Матчей:</h5>
+                    <h4>1234</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-roster-card fldir-clmn">
+              <div class="fldir-clmn">
+                <div class="fldir-row">
+                  <h3>Miposhka</h3>
+                  <img class="role-pos5-icon-w16-h17">
+                </div>
+                <div class="fldir-row">
+                  <img class="country-w20-h15">
+                  <h4>Ярослав Найдёнов</h4>
+                </div>
+              </div>
+              <div class="fldir-row">
+                <img class="player-photo-w84-h84">
+                <div class="fldir-clmn player-heroes">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                  <img class="hero-icon-w32-h32">
+                </div>
+                <div class="fldir-clmn player-short-info">
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>В команде с:</h5>
+                    <h4>30 ноября 2017</h4>
+                  </div>
+                  <div class="fldir-clmn player-short-info-1">
+                    <h5>Матчей:</h5>
+                    <h4>1234</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content-block fldir-clmn" id="team-stats">
+          <h3>Статистика</h3>
+            <div class="team-stats-block fldir-clmn">
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Матчей</h4>
+                <h4 class="match-count">13 000</h4>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Процент побед</h4>
+                <h4 class="persents-positive">58,88%</h4>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Соотношение</h4>
+                <div class="match-diff fldir-row">
+                  <h4 class="persents-positive">7 812</h4>
+                  <h4>-</h4>
+                  <h4 class="persents-negative">6 782</h4>
+                </div>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Первые места</h4>
+                <b><h4 class="">10</h4></b>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Призовые за карьеру</h4>
+                <b><h4 class="">$25 427 914</h4></b>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Дата создания</h4>
+                <b><h4 class="">06.12.2015</h4></b>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Страна</h4>
+                <div class="fldir-row country-full">
+                  <img class="country-w20-h15">
+                  <h4>Россия</h4>
+                </div>
+                <div class="fldir-row country-full">
+                  <img class="country-w20-h15">
+                  <h4>Россия</h4>
+                </div>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Страна</h4>
+                <h4 class="">06.12.2015</h4>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Тренер</h4>
+                <h4 class="">Silent</h4>
+              </div>
+              <div class="player-stats-block fldir-clmn">
+                <h4 class="stats-title">Менеджер</h4>
+                <h4 class="">Korb3n</h4>
+                <h4 class="">DKLana</h4>
+              </div>
+            </div>
+        </section>
+        <section class="content-block fldir-clmn" id="team-ftournaments">
+          <h3>Ближайшие турниры</h3>
+          <h4>The International 2024</h4>
+          <h4>The International 2024</h4>
+          <h4>The International 2024</h4>
+          
+        </section>
+        <section class="content-block fldir-clmn" id="team-matches">
+          <h3>Матчи</h3>
+          <div>
+            <table id="table-matches">
+              <tr>
+                <th class="table-matches-result" id="table-matches-result-header"></th>
+                <th class="table-matches-date"><h4>Дата</h4></th>
+                <th class="table-matches-hero"><h4>Герой</h4></th>
+                <th class="table-matches-kda"><h4>KDA</h4></th>
+                <th class="table-matches-enemy"><h4>Оппонент</h4></th>
+                <th class="table-matches-id"><h4>ID матча</h4></th>
+              </tr>
+              <tr>
+                <td class="table-matches-result"><div class="td-match-result"><h4>WIN</h4></div></td>
+                <td class="table-matches-date"><h4>10.09.2024</h4></td>
+                <td class="table-matches-hero">
+                  <div class="hero-role-card-w48-h49 fldir-row">
+                    <img class="hero-icon-w32-h32">
+                    <img class="role-pos5-icon-w16-h17"></td>
+                  </div>
+                <td class="table-matches-kda"><h4>88 / 88 / 88</h4></td>
+                <td class="table-matches-enemy"><img class="team-logo-w68-h34"></td>
+                <td class="table-matches-id"><h4>1234124124</h4></td>
+              </tr>
+              <tr>
+                <td class="table-matches-result"><div><h4>WIN</h4></div></td>
+                <td class="table-matches-date"><h4>10.09.2024</h4></td>
+                <td class="table-matches-hero">
+                  <div class="hero-role-card-w48-h49 fldir-row">
+                    <img class="hero-icon-w32-h32">
+                    <img class="role-pos5-icon-w16-h17"></td>
+                  </div>
+                <td class="table-matches-kda"><h4>88 / 88 / 88</h4></td>
+                <td class="table-matches-enemy"><img class="team-logo-w68-h34"></td>
+                <td class="table-matches-id"><h4>1234124124</h4></td>
+              </tr>
+              <tr>
+                <td class="table-matches-result"><div><h4>WIN</h4></div></td>
+                <td class="table-matches-date"><h4>10.09.2024</h4></td>
+                <td class="table-matches-hero">
+                  <div class="hero-role-card-w48-h49 fldir-row">
+                    <img class="hero-icon-w32-h32">
+                    <img class="role-pos5-icon-w16-h17"></td>
+                  </div>
+                <td class="table-matches-kda"><h4>88 / 88 / 88</h4></td>
+                <td class="table-matches-enemy"><img class="team-logo-w68-h34"></td>
+                <td class="table-matches-id"><h4>1234124124</h4></td>
+              </tr>
+              <tr>
+                <td class="table-matches-result"><div><h4>WIN</h4></div></td>
+                <td class="table-matches-date"><h4>10.09.2024</h4></td>
+                <td class="table-matches-hero">
+                  <div class="hero-role-card-w48-h49 fldir-row">
+                    <img class="hero-icon-w32-h32">
+                    <img class="role-pos5-icon-w16-h17"></td>
+                  </div>
+                <td class="table-matches-kda"><h4>88 / 88 / 88</h4></td>
+                <td class="table-matches-enemy"><img class="team-logo-w68-h34"></td>
+                <td class="table-matches-id"><h4>1234124124</h4></td>
+              </tr>
+              <tr>
+                <td class="table-matches-result"><div><h4>WIN</h4></div></td>
+                <td class="table-matches-date"><h4>10.09.2024</h4></td>
+                <td class="table-matches-hero">
+                  <div class="hero-role-card-w48-h49 fldir-row">
+                    <img class="hero-icon-w32-h32">
+                    <img class="role-pos5-icon-w16-h17"></td>
+                  </div>
+                <td class="table-matches-kda"><h4>88 / 88 / 88</h4></td>
+                <td class="table-matches-enemy"><img class="team-logo-w68-h34"></td>
+                <td class="table-matches-id"><h4>1234124124</h4></td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section class="content-block fldir-clmn" id="team-heroes">
+          <div class="filter-block">
+            <h3>Заголовок</h3>
+            <div class="filter-buttons-block fldir-row">
+              <div>
+                <h4>7 дней</h4>
+              </div>
+              <div>
+                <h4>14 дней</h4>
+              </div>
+              <div>
+                <h4>30 дней</h4>
+              </div>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <div class="heroes-list fl-wrap">
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">1232</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+              <div class="hero-card-w132-h32 fldir-row">
+                <div class="hero-role-card-w48-h49 fldir-row">
+                  <img class="hero-icon-w32-h32">
+                  <img class="role-pos5-icon-w16-h17"></td>
+                </div>
+                <div class="hero-pm-card fldir-row">
+                  <h4 class="persents-positive">100%</h4>
+                  <h4 class="match-count hero-card-matches">123</h4>
+                </div>
+              </div>
+            </div>
+        </div>
+        </section>
+        <section class="content-block fldir-clmn" id="team-heroes-by-player-block">
+          <div class="filter-block">
+            <h3>Заголовок</h3>
+            <div class="filter-buttons-block fldir-row">
+              <div>
+                <h4>7 дней</h4>
+              </div>
+              <div>
+                <h4>14 дней</h4>
+              </div>
+              <div>
+                <h4>30 дней</h4>
+              </div>
+            </div>
+          </div>
+          <div class="table-headers fldir-row">
 
-            <button id="header-profile-logout">
-                <!-- Картинка выхода -->
-                 <img src="../resourses/exit.png">
-            </button>
-    </div>
-      <div id="player-background">
-        <div id="player-background-block">
-          <div id="player-nickname-block">
-            <h1>MIPOSHKA</h1>
+              <h4>Satanic</h4>
+              <h4>Satanic</h4>
+              <h4>Satanic</h4>
+              <h4>Satanic</h4>
+              <h4>Satanic</h4>
+
           </div>
-          <div class="info-block" id="player-short-info-block">
+          <div class="table-wrapper">
+            <table class="team-heroes-by-player">
+              
+              <tr>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="hero-card-w132-h32 fldir-row">
+                    <div class="hero-role-card-w48-h49 fldir-row">
+                      <img class="hero-icon-w32-h32">
+                      <img class="role-pos5-icon-w16-h17">
+                    </div>
+                    <div class="hero-pm-card fldir-row">
+                      <h4 class="persents-positive">100%</h4>
+                      <h4 class="match-count hero-card-matches">123</h4>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              
+            </table>
+
           </div>
-        </div>
+        </section>
+        <section class="content-block fldir-clmn" id="team-wardmap">
+          <div class="filter-block">
+            <h3>Заголовок</h3>
+            <div class="filter-buttons-block fldir-row">
+              <div>
+                <h4>7 дней</h4>
+              </div>
+              <div>
+                <h4>14 дней</h4>
+              </div>
+              <div>
+                <h4>30 дней</h4>
+              </div>
+            </div>
+          </div>
+          <div class="wardmap-frame fl-wrap fldir-row">
+            <div class="wardmap-block fldir-clmn">
+              <h4>Свет</h4>
+              <img class="wardmap">
+            </div>
+            <div class="wardmap-block fldir-clmn">
+              <h4>Тьма</h4>
+              <img class="wardmap">
+            </div>
+          </div>
+        </section>
+        <section class="content-block fldir-clmn" id="team-wardmap-7-00">
+          <div class="filter-block">
+            <h3>Варды на 7:00</h3>
+            
+          </div>
+          <div class="wardmap-frame fl-wrap fldir-row">
+            <div class="wardmap-block fldir-clmn">
+              <h4>Свет</h4>
+              <img class="wardmap">
+            </div>
+            <div class="wardmap-block fldir-clmn">
+              <h4>Тьма</h4>
+              <img class="wardmap">
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    
   </body>
 </html>

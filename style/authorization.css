@@ -1,0 +1,62 @@
+@import url(constants.css);
+
+body
+{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3, h4
+{
+    color: black;
+}
+
+.auth-form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+
+    gap: 20px;
+}
+
+.log-pass
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    
+}
+
+
+.auth-button:hover
+{
+    filter: invert();
+}
+
+*
+{
+    text-decoration: none;
+}

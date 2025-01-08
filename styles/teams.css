@@ -3,38 +3,22 @@
 @import "../s-colors.css";
 @import "../images.css";
 
-body
-{
-    background-color: black;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: start;
-}
-
 main
 {
-    position: relative;
-    top: 79px;
-    height: 100%;
-    width: 1000px;
-    padding: 0px 40px;
-
-    z-index: 0;
+    height: 100vh;
+    overflow: hidden;
 }
-
 #player-background
 {
     display: flex;
     background-color: var(--body-color-background);
     max-width: 100vw;
     min-width: var(--content-width-min);
-    width: 100%;
-	height: 100%;
+    width: 100vw;
+	height: 100vh;
     justify-content: center;
     align-items: top;
-    
+
 }
 
 #player-background-block
@@ -52,10 +36,8 @@ main
     align-items: start;
 
     min-height: 1000px;
-    height: 100%;
+    height: 100vh;
 }
-
-
 
 #category-block
 {
@@ -66,7 +48,6 @@ main
     width: 100%;
     order: 0; 
     z-index: 99;
-    height: 64px;
 
 }
 
@@ -89,10 +70,10 @@ main
     padding: 0;
     margin-bottom: 55px;
     overflow: hidden;
-    height: 100%;
+    height: 90vh;
 }
 
-#teams-list ul
+#teams-list ul, #teams-list ul a, #teams-list ul a li
 {
     width: 100%;
     display: flex;
@@ -126,7 +107,8 @@ main
 
 #teams-list ul
 {
-    height: 100%;
+    overflow: scroll;
+    height: 100vh;
 }
 
 #teams-list ul::-webkit-scrollbar
@@ -134,11 +116,11 @@ main
     width: 0;
 }
 
-.teams-team-info a
+.teams-team-info
 {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     flex-direction: row;
 
     width: 100%;
@@ -165,18 +147,15 @@ main
     background-color: #ffffff;
     
 }
-
-.teams-team-info:hover .team-logo img
-{
-    content: url("../../resourses/spirit-logo-black.png");
-    
-}
-
 .teams-team-info:hover h3, .teams-team-info:hover h4
 {
     color: var(--body-color-background);
 }
-
+.teams-team-info:hover img
+{
+    background-color: var(--body-color-background);
+    src: url("../../resourses/secret-logo-black.png");
+}
 .teams-team-info
 {
     width: calc(100% - var(--indent-inside)*2);

@@ -1,0 +1,708 @@
+@import url(constants.css);
+@import url(assets.css);
+
+
+
+/*
+    Страница
+*/
+
+.page-content
+{
+    width: 1000px;
+    height: 100%;
+    
+    padding-top: 74px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    position: relative;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+/*
+    Общие параметры
+*/
+
+
+.player-photo-w84-h84
+{
+    width: 84px;
+    height: 84px;
+    content: url("../resourses/miposhka_face.png");
+}
+
+.country-w20-h15
+{
+    content: url("../resourses/flag20x15.png");
+    width: 20px;
+    height: 15px;
+}
+
+.titan-w84-h84
+{
+    content: url("../resourses/titan84x84.png");
+    width: 84px;
+    height: 84px;
+}
+
+.team-logo-w84-h84
+{
+    width: 84px;
+    height: 84px;
+    content: url("../resourses/spirit-logo-white.png");
+}
+
+/*
+    Шаблоны
+*/
+
+
+
+.page-name
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    width: 100%;
+    height: 64px;
+    padding: 10px 0px 10px 15px;
+    gap: 15px;
+}
+.result
+{
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+}
+.score
+{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.page-name h1
+{
+    color: black;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+#team-stats
+{
+    position: absolute;
+    left: calc(698px + 40px);
+    top: calc(74px + 69px);
+
+    width: 222px;
+    height: 519px;
+}
+
+#team-roster
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(74px + 69px);
+
+    width: 688px;
+    height: 944px;
+}
+
+#team-ftournaments
+{
+    position: absolute;
+    left: calc(698px + 40px);
+    top: calc(603px + 69px);
+
+    width: 222px;
+    height: 415px;
+}
+
+#team-matches
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(1028px + 69px);
+
+    width: 533px;
+    height: 440px;
+}
+
+#team-heroes
+{
+    position: absolute;
+    left: calc(543px + 40px);
+    top: calc(1028px + 69px);
+
+    width: 377px;
+    height: 440px;
+}
+
+#team-heroes-by-player-block
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(1478px + 69px);
+
+    width: 920px;
+    height: 374px;
+
+    
+}
+
+#team-wardmap
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(1862px + 69px);
+
+    width: 920px;
+    height: 493px;
+}
+
+#team-wardmap-7-00
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(2290px + 69px + 75px);
+
+    width: 920px;
+    height: 463px;
+}
+
+.maps
+{
+    position: absolute;
+    left: 40px;
+    top: 139px;
+
+    width: 920px;
+    height: 54px;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.map
+{
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+
+    background-color: #090909;
+}
+
+.map img
+{
+    filter: invert();
+}
+
+.map:hover
+{
+    filter: invert();
+}
+
+.selected
+{
+    filter: invert();
+}
+
+#match-tech-info
+{
+    position: absolute;
+    left: 40px;
+    top: calc(134px + 69px);
+    gap: 15px;
+    width: 300px;
+    height: 141px;
+    align-items: start;
+    justify-content: start;
+}
+
+.mti-text
+{
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#match-heroes
+{
+    position: absolute;
+    left: 350px;
+    top: calc(134px + 69px);
+
+    width: 610px;
+    height: 455px;
+
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+
+}
+
+#match-map
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(285px + 69px);
+
+    width: 300px;
+    height: 304px;
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+}
+
+
+
+#match-graphic
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(599px + 69px);
+
+    width: 920px;
+    height: 280px;
+        background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+}
+
+#match-items-skills-stats
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(889px + 69px);
+
+    width: 920px;
+    height: 675px;
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+}
+
+.gold-image
+{
+    width: 21px;
+    height: 13px;
+
+    content: url("../resourses/gold.png");
+}
+
+.titan-w84-h84
+{
+    width: 30px;
+    height: 30px;
+}
+
+.player-rank
+{
+    position: relative;
+}
+
+.player-rank h5
+{
+    width: 30px;
+    height: 14px;
+    position: absolute;
+    top: 22px;
+    text-align: center;
+}
+
+.match-heroes-nick-rank
+{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-icon-w57-h32
+{
+    width: 57px;
+    height: 32px;
+    content: url("../resourses/enchantress_horz.webp");
+}
+
+.match-hero-role
+{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.match-heroes-card
+{
+    width: 290px;
+    height: 83px;  
+    padding: 10px;
+    gap: 10px;
+    background-color: #111111;
+}
+
+.match-heroes-nick-hero, .match-heroes-kda-gold
+{
+    justify-content: space-between ;
+    align-items: center;
+    gap: 10px;
+}
+
+.match-heroes-gold
+{
+    align-items: center;
+}
+
+.aspect-w16-h16
+{
+    width: 16px;
+    height: 16px;
+    content: url("../resourses/aspect.png");
+}
+
+.talent-w32-h32
+{
+    width: 32px;
+    height: 32px;
+    content: url("../resourses/talents.png");
+}
+
+.hero-nickname, .aspect-talent
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.player-talent
+{
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 41px;
+}
+
+.skill-image-w24-h24
+{
+    width: 24px;
+    height: 24px;
+    content: url("../resourses/enchantress_impetus.webp");
+}
+
+.item-image-w34-h24
+{
+    width: 34px;
+    height: 24px;
+    content: url("../resourses/item-w24-h24.png");
+}
+
+.skills, .items
+{
+    gap: 5px;
+}
+
+.player-items-skills-card
+{
+    background-color: #111111;
+    width: 445px;
+    height: 127px;
+    padding: 5px;
+    gap: 10px;
+}
+
+#match-items-skills-stats
+{
+    gap: 10px;
+}
+
+.buid-team-clmn
+{
+    gap: 5px;
+}
+
+
+.player-short-info-1 h4
+{
+    height: 19px;
+    vertical-align: center;
+}
+
+.player-short-info-1 h5
+{
+    height: 15px;
+    vertical-align: center;
+}
+
+.team-roster-card
+{
+    gap: 10px;
+}
+
+.player-short-info-1
+{
+    gap: 5px;
+}
+
+.player-heroes
+{
+    gap: 5px;
+    padding: 5px;
+    
+}
+
+.hero-icon-w32-h32
+{
+    content: url("../resourses/hero32x32.png");
+    width: 22px;
+    height: 22px;
+}
+
+.team-roster-cards
+{
+    width: 668px;
+    height: 167px;
+
+    gap: 10px;
+}
+
+.team-stats
+{
+    gap: 10px;
+}
+.player-stats-block
+{
+    gap: 1px;
+}
+
+.team-stats-block
+{
+    gap: 10px;
+}
+
+.stats-title
+{
+    font-weight: normal;
+}
+
+.team-roster-card
+{
+    gap: 10px;
+    padding: 10px;
+    height: 167px;
+
+    background-color: #111111;
+}
+
+.team-roster
+{
+    gap: 10px;
+    padding: 10px;
+}
+
+.team-player-name
+{
+    height: 49px;
+}
+
+.team-player-items
+{
+    height: 88px;
+}
+
+
+.table-matches-result
+{
+    width: 25px;
+    height: 60px;
+    padding: 0;
+}
+
+.table-matches-result div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 50px;
+    background-color: #00ff00;
+}
+
+tr h4
+{
+    text-align: center;
+    width: 100%;
+}
+
+#table-matches-result-header
+{
+    background-color: #090909;
+}
+.table-matches-result h4
+{
+    transform: rotate(-90deg);
+    color: black;
+    font-weight: 700;
+    width: 40px;
+    height: 15px;
+    
+}
+.td-match-result
+{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.table-matches-date
+{
+    width: 105px;
+    height: 50px;
+}
+
+.table-matches-hero
+{
+    width: 60px;
+    height: 50px;
+}
+
+.table-matches-kda
+{
+    width: 95px;
+    height: 50px;
+}
+
+.table-matches-enemy
+{
+    width: 82px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-matches-id
+{
+    width: 99px;
+    height: 50px;
+}
+
+.team-logo-w68-h34
+{
+    content: url("../resourses/secret-logo-white.png");
+    width: 68px;
+    height: 34px;
+}
+
+.hero-role-card-w48-h49 .hero-icon-w32-h32
+{
+    width: 32px;
+    height: 32px;
+}
+
+.hero-role-card-w48-h49, .hero-pm-card
+{
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.table-wrapper
+{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.team-heroes-by-player tr
+{
+    width: 900px;
+}
+
+.team-heroes-by-player th, .table-headers h4
+{
+    width: 184px;
+    height: 19px;
+    text-align: center;
+}
+
+.team-heroes-by-player td
+{
+    width: 184px;
+    height: 32px;
+    padding: 10px 15px;
+}
+
+.hero-card-w132-h32
+{
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+
+    width: 150px;
+    height: 32px;
+}
+
+.wardmap-frame
+{   
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.wardmap-block
+{
+    justify-content: start;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+}
+
+.wardmap
+{
+    width: 375px;
+    height: 375px;
+    content: url("../resourses/wardmap-player.png");
+}
+
+.player-info
+{
+    justify-content: center;
+    align-items: start;
+}
+
+.team-name-frame
+{
+    width: 1000%;
+}
+
+.team-name
+{
+    width: 100%;
+}
+.ranking
+{
+    width: 100px;
+}

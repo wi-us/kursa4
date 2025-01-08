@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Match</title>
+    <title>Player</title>
 
     <meta charset="utf-8">
     <link rel="icon" type="image/ico" href="favicon.ico"/>
@@ -9,318 +9,975 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/Player/match.css" type="text/css"/>
+    <link rel="stylesheet" href="../style/header-1000.css" type="text/css"/ >
+    <link rel="stylesheet" href="../style/match-1000.css" type="text/css"/>
   </head>
+  <header class="h-desktop">
+    <div id="h-box">
+      <img class="team-logo-w44-h44 black" href="#">
+      <nav class="nav-menu">
+        <ul>
+          <a href="../pages/players.html"><li class="nav-button"><h4>Игроки</h4></li></a>
+          <a href="../pages/tournaments.html"><li class="nav-button"><h4>Турниры</h4></li></a>
+          <a href="../pages/teams.html"><li class="nav-button"><h4>Команды</h4></li></a>
+          <a href="../pages/matches.html"><li class="nav-button"><h4>Тренировки</h4></li></a>
+        </ul>
+      </nav>
+      <a href="../pages/authorization.html"><img class="logout-w44-h44 black"></a>
+    </div>
+    <div id="h-box-mobile">
+      <div class="hamb-logo fldir-row">
+        <div class="hamburger">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        <img class="team-logo-w44-h44 black" href="#">
+      </div>
+      <div class="download-pdf-box">
+        <h4>Скачать статистику</h4>
+        <img class="pdf-w44-h44" href="#">
+      </div>
+    </div>
+  </header>
   <body>
     <main>
-      <div id="header-box">
-        <div id="header-logo">
-            <!-- Лого -->
-             <img src="../resourses/spirit-logo-black.png">
-        </div>
-        <ul id="header-buttons-box">
-            <li class="header-button">
-                <!-- Игроки -->
-                 <a href="../pages/players.html">Игроки</a>
-            </li>
-            <li class="header-button">
-                <!-- Команды -->
-                
-                <a href="../pages/teams.html">Команды</a>
-            </li>
-            <li class="header-button">
-                <!-- Турниры -->
-                
-                <a href="../pages/tournaments.html">Турниры</a>
-            </li>
-            <li class="header-button">
-                <!-- Тренировки -->
-                
-                <a href="../pages/matches.html">Тренировки</a>
-            </li>
-        </ul>
-
-            <button id="header-profile-logout">
-                <!-- Картинка выхода -->
-                 <img src="../resourses/exit.png">
-            </button>
-    </div>
-      <div id="player-background">
-        <div id="player-background-block">
-          <div id="player-nickname-block">
-            <h1>MATCH</h1>
+      <div class="page-content" id="player-content">
+        <div class="page-name">
+          <div class="result fldir-row">
+            <img class="team-logo-w44-h44  ">
+            <div class="score fldir-row">
+              <h3>88</h3>
+              <h4>60:00</h4>
+              <h3>88</h3>
+            </div>
+            <div class="fldir-row" style="justify-content: center; align-items: center; gap: 15px;">
+              <h3 style="color: rgb(0, 236, 0);">WINNER</h3>
+              <img class="team-logo-w44-h44 win">
+            </div>
+            
           </div>
-          <div class="info-block" id="short-team-info">
-            <div class="victory">
-              <h4></h4>
-            </div>
-            <div class="column-flex-block">
-              <h2>Team Spirit</h2>
-            </div>
-            <div class="one-line-flex-block" >
-              <div class="logo-40x40">
-                <img src="../resourses/spirit-logo-white.png">
-              </div>
-              <div>
-                <h2>3 - 2</h2>
-              </div>
-              <div class="logo-60x30">
-                <img src="../resourses/secret-logo-white.png">
-              </div>
-              <div class="column-flex-block">
-                <h2>Team Secret</h2>
-              </div>
-            </div>
-          </div>
-          <div class="info-block one-line-flex-block" id="maps-list">
-            <div class="match_map one-line-flex-block">
-              <img src="../resourses/spirit-logo-white.png" width="25px">
-              <h5>Карта 1</h5>
-            </div>
-            <div class="match_map one-line-flex-block">
-              <img src="../resourses/secret-logo-white.png" width="25px">
-              <h5>Карта 2</h5>
-            </div>
-            <div class="match_map one-line-flex-block">
-              <img src="../resourses/secret-logo-white.png" width="25px">
-              <h5>Карта 3</h5>
-            </div>
-            <div class="match_map one-line-flex-block" id="map-4">
-              <img src="../resourses/spirit-logo-white.png" width="25px">
-              <h5>Карта 4</h5>
-              <h5>89498989</h5>
-            </div>
-            <div class="match_map one-line-flex-block">
-              <img src="../resourses/spirit-logo-white.png" width="25px">
-              <h5>Карта 5</h5>
-            </div>
-          </div>
-          <div class="info-block column-flex-block" id="after-match-stats">
-            <h3>Результат</h3>
-            <div class="one-line-flex-block" id="teams-stats">
-              <div class="one-line-flex-block match_team_stats_hero" id="team-radiant-stats">
-                <div class="info-block column-flex-block mstat_radiant_hero">
-                    <img src="../resourses/enchantress_horz.webp">
-                    <h5>Miposhka</h5>
-                    <h5>12 / 3 / 19</h5>
-                    <div class="one-line-flex-block gold">
-                      <h5>36 983</h5>
-                      <img src="../resourses/gold.png">
-                    </div>
-
-                </div>
-                <div class="info-block column-flex-block mstat_radiant_hero">
-                  <img src="../resourses/enchantress_horz.webp">
-                  <h5>Miposhka</h5>
-                  <h5>12 / 3 / 19</h5>
-                  <div class="one-line-flex-block gold">
-                    <h5>36 983</h5>
-                    <img src="../resourses/gold.png">
-                  </div>
-
-              </div>
-              <div class="info-block column-flex-block mstat_radiant_hero">
-                <img src="../resourses/enchantress_horz.webp">
-                <h5>Miposhka</h5>
-                <h5>12 / 3 / 19</h5>
-                <div class="one-line-flex-block gold">
-                  <h5>36 983</h5>
-                  <img src="../resourses/gold.png">
-                </div>
-
-            </div>
-            <div class="info-block column-flex-block mstat_radiant_hero">
-              <img src="../resourses/enchantress_horz.webp">
-              <h5>Miposhka</h5>
-              <h5>12 / 3 / 19</h5>
-              <div class="one-line-flex-block gold">
-                <h5>36 983</h5>
-                <img src="../resourses/gold.png">
-              </div>
-
-          </div>
-          <div class="info-block column-flex-block mstat_radiant_hero">
-            <img src="../resourses/enchantress_horz.webp">
-            <h5>Miposhka</h5>
-            <h5>12 / 3 / 19</h5>
-            <div class="one-line-flex-block gold">
-              <h5>36 983</h5>
-              <img src="../resourses/gold.png">
-            </div>
-
-        </div>
-                
-              </div>
-              <div class="one-line-flex-block match_team_stats_hero" id="team-dire-stats">
-                <div class="info-block column-flex-block mstat_dire_hero">
-                  <img src="../resourses/enchantress_horz.webp">
-                  <h5>Miposhka</h5>
-                  <h5>12 / 3 / 19</h5>
-                  <div class="one-line-flex-block gold">
-                    <h5>36 983</h5>
-                    <img src="../resourses/gold.png">
-                  </div>
-                </div>
-                <div class="info-block column-flex-block mstat_dire_hero">
-                  <img src="../resourses/enchantress_horz.webp">
-                  <h5>Miposhka</h5>
-                  <h5>12 / 3 / 19</h5>
-                  <div class="one-line-flex-block gold">
-                    <h5>36 983</h5>
-                    <img src="../resourses/gold.png">
-                  </div>
-                </div>
-                <div class="info-block column-flex-block mstat_dire_hero">
-                  <img src="../resourses/enchantress_horz.webp">
-                  <h5>Miposhka</h5>
-                  <h5>12 / 3 / 19</h5>
-                  <div class="one-line-flex-block gold">
-                    <h5>36 983</h5>
-                    <img src="../resourses/gold.png">
-                  </div>
-                </div>
-                <div class="info-block column-flex-block mstat_dire_hero">
-                  <img src="../resourses/enchantress_horz.webp">
-                  <h5>Miposhka</h5>
-                  <h5>12 / 3 / 19</h5>
-                  <div class="one-line-flex-block gold">
-                    <h5>36 983</h5>
-                    <img src="../resourses/gold.png">
-                  </div>
-                </div>
-                <div class="info-block column-flex-block mstat_dire_hero">
-                  <img src="../resourses/enchantress_horz.webp">
-                  <h5>Miposhka</h5>
-                  <h5>12 / 3 / 19</h5>
-                  <div class="one-line-flex-block gold">
-                    <h5>36 983</h5>
-                    <img src="../resourses/gold.png">
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="info-block column-flex-block" id="chosen_abilities_box">
-            <h3>Сборки</h3>
-            <div class="one-row-flex-block" id="chosen_abilities_boxes">
-              <div class="column-flex-block" id="hero-builds-c1">
-                <div class="column-flex-block hero-builds-radiant">
-                  <div class="one-row-flex-block hero-chosen-abilities">
-                    <div class="one-row-flex-block hero_portrait">
-                      <img src="../resourses/enchantress_horz.webp">
-                      <h5>Miposhka</h5>
-                    </div>
-                    <div class="one-row-flex-block abilities">
-                      <img src="../resourses/enchantress_impetus.webp">
-                      <img src="../resourses/enchantress_enchant.webp">
-                      <img src="../resourses/enchantress_impetus.webp">
-                      <img src="../resourses/enchantress_natures_attendants.webp">
-                      <img src="../resourses/enchantress_impetus.webp">
-                      <img src="../resourses/enchantress_untouchable.webp">
-                      <img src="../resourses/enchantress_impetus.webp">
-                      <img src="../resourses/enchantress_natures_attendants.webp">
-                      <img src="../resourses/enchantress_natures_attendants.webp">
-                    </div>
-
-                  </div>
-                  <div class="one-row-flex-block hero-chosen-items">
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="column-flex-block" id="hero-builds-c1">
-                <div class="column-flex-block hero-builds-dire">
-                  <div class="one-row-flex-block hero-chosen-abilities">
-                    <div class="one-row-flex-block hero_portrait">
-                      <img src="../resourses/enchantress_horz.webp">
-                      <h5>Miposhka</h5>
-                    </div>
-                    <div class="one-row-flex-block abilities">
-                      <img src="../resourses/enchantress_impetus.webp">
-                      <img src="../resourses/enchantress_enchant.webp">
-                      <img src="../resourses/enchantress_impetus.webp">
-                      <img src="../resourses/enchantress_natures_attendants.webp">
-                      <img src="../resourses/enchantress_impetus.webp">
-                      <img src="../resourses/enchantress_untouchable.webp">
-                      <img src="../resourses/enchantress_impetus.webp">
-                      <img src="../resourses/enchantress_natures_attendants.webp">
-                      <img src="../resourses/enchantress_natures_attendants.webp">
-                    </div>
-
-                  </div>
-                  <div class="one-row-flex-block hero-chosen-items">
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                    <div class="column-flex-block item">
-                      <img src="../resourses/aghanim_scepter.webp">
-                      <h5>06:00</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="download-pdf-box" id="page-name-pdf">
+            <h4>Скачать статистику</h4>
+            <img class="pdf-w44-h44" href="#">
           </div>
         </div>
+        <div class="maps fldir-row">
+          <div class="map selected fldir-row">
+            <img class="team-logo-w44-h44" href="#">
+            <h4>Матч 1</h4>
+          </div>
+          <div class="map fldir-row">
+            <img class="team-logo-w44-h44" href="#">
+            <h4>Матч 2</h4>
+          </div>
+          <div class="map fldir-row">
+            <img class="team-logo-w44-h44" href="#">
+            <h4>Матч 3</h4>
+          </div>
+          <div class="map fldir-row">
+            <img class="team-logo-w44-h44" href="#">
+            <h4>Матч 4</h4>
+          </div>
+          <div class="map fldir-row">
+            <img class="team-logo-w44-h44" href="#">
+            <h4>Матч 5</h4>
+          </div>
+        </div>
+        <section class="content-block fldir-clmn" id="match-tech-info">
+          <div class="mti-text fldir-row">
+            <h4>ID матча:</h4>
+            <h4>88879879</h4>
+          </div>
+          <div class="mti-text fldir-row">
+            <h4>Сервер:</h4>
+            <h4>Россия</h4>
+          </div>
+          <div class="mti-text fldir-row">
+            <h4>Дата:</h4>
+            <h4>12 сент. 2024 г., 18:31</h4>
+          </div>
+          <div class="mti-text fldir-row">
+            <h4>Рейтинг:</h4>
+            <h4>Титан</h4>
+          </div>
+        </section>
+        <section class="content-block fldir-row" id="match-heroes">
+          <div class="heroes-radiant fldir-clmn">
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="heroes-radiant fldir-clmn">
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+            <div class="match-heroes-card fldir-clmn">
+              <div class="match-heroes-nick-hero fldir-row">
+                <div class="match-heroes-nick-rank fldir-row">
+                  <div class="player-rank">
+                    <img class="titan-w84-h84">
+                    <h5>999</h5>
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div>
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                </div>
+              </div>
+              <div class="match-heroes-kda-gold fldir-row">
+                <h4>99 / 99 / 99</h4>
+                <div class="match-heroes-gold fldir-row">
+                  <img class="gold-image">
+                  <h4>99 999</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <div id="match-map">
+          <img src="../resourses/map.png">
+        </div>
+        <div id="match-graphic">
+          <img src="../resourses/image 25.png">
+        </div>
+        <section class="content-block fldir-row" id="match-items-skills-stats">
+          <div class="buid-team-clmn fldir-clmn">
+
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+           
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="fldir-clmn buid-team-clmn">
+
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+            <div class="player-items-skills-card fldir-clmn">
+              <div class="player-talent fldir-row">
+                <div class="hero-nickname fldir-row">
+                  <div class="match-hero-role fldir-row">
+                    <img class="hero-icon-w57-h32">
+                    <img class="role-pos5-icon-w16-h17">
+                  </div>
+                  <h4>Satanic</h4>
+                </div>
+                <div class="aspect-talent fldir-row">
+                  <img class="aspect-w16-h16">
+                  <img class="talent-w32-h32">
+                </div>
+              </div>
+              <div class="skills fldir-row">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+                <img class="skill-image-w24-h24">
+              </div>
+              <div class="items fldir-row">
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+                <div>
+                  <img class="item-image-w34-h24">
+                  <h5>05:00</h5>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+            
+
+        </section>
       </div>
     </main>
-    
   </body>
 </html>

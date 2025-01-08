@@ -10,41 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/Player/teams.css" type="text/css"/>
+    <link rel="stylesheet" href="../style/header-1000.css" type="text/css"/ >
   </head>
+  <header class="h-desktop">
+    <div id="h-box">
+      <img class="team-logo-w44-h44 black" href="#">
+      <nav class="nav-menu">
+        <ul>
+          <a href="../pages/players.html"><li class="nav-button"><h4>Игроки</h4></li></a>
+          <a href="../pages/tournaments.html"><li class="nav-button"><h4>Турниры</h4></li></a>
+          <a href="../pages/teams.html"><li class="nav-button"><h4>Команды</h4></li></a>
+          <a href="../pages/matches.html"><li class="nav-button"><h4>Тренировки</h4></li></a>
+        </ul>
+      </nav>
+      <a href="../pages/authorization.html"><img class="logout-w44-h44 black"></a>
+    </div>
+    <div id="h-box-mobile">
+      <div class="hamb-logo fldir-row">
+        <div class="hamburger">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        <img class="team-logo-w44-h44 black" href="#">
+      </div>
+      <div class="download-pdf-box">
+        <h4>Скачать статистику</h4>
+        <img class="pdf-w44-h44" href="#">
+      </div>
+    </div>
+  </header>
   <body>
     <main>
-      <div id="header-box">
-        <div id="header-logo">
-            <!-- Лого -->
-             <img src="../resourses/spirit-logo-black.png">
-        </div>
-        <ul id="header-buttons-box">
-            <li class="header-button">
-                <!-- Игроки -->
-                 <a href="../pages/players.html">Игроки</a>
-            </li>
-            <li class="header-button">
-                <!-- Команды -->
-                
-                <a href="../pages/teams.html">Команды</a>
-            </li>
-            <li class="header-button">
-                <!-- Турниры -->
-                
-                <a href="../pages/tournaments.html">Турниры</a>
-            </li>
-            <li class="header-button">
-                <!-- Тренировки -->
-                
-                <a href="../pages/matches.html">Тренировки</a>
-            </li>
-        </ul>
-
-            <button id="header-profile-logout">
-                <!-- Картинка выхода -->
-                 <img src="../resourses/exit.png">
-            </button>
-    </div>
+      
         <div id="player-background">
             
             <div id="player-background-block">
@@ -54,384 +51,355 @@
               <div class="info-block" id="teams-list">
                 <ul>
                   <li class="teams-team-info">
-                    <div class="team-rating-box">
-                      <div class="team-position">
-                        <h3>#</h3>
-                        <h3>100</h3>
-                      </div>
-                      <div class="team-ept-points">
-                        <h3>19 200</h3>
-                      </div>
-                    </div>
-                    <div class="team-logo-name">
-                      <div class="team-logo">
-                          <img src="../resourses/spirit-logo-white.png">
-                      </div>
-                      <div class="team-name" href="#">
-                          <h3>TEAM SPIRIT</h3>
-                      </div>
-                    </div>
-                    <div class="team-roster">
-                      <h4>YATORO</h4>
-                      <h4>LARI</h4>
-                      <h4>COLLAPSE</h4>
-                      <h4>MIRA</h4>
-                      <h4>MIPOSHKA</h4>
-                    </div>
+                    <a href="../pages/team.html">
 
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
+                        </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
+                        </div>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
+                        </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
+
+                    </a>
                   </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
-                        </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
-                        </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
-                        </div>
+                  <li class="teams-team-info">
+                    <a href="../pages/team.html">
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
                         </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
                         </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
                         </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
-                        </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
-                        </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
-                        </div>
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
                         </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
                         </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
                         </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
-                        </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
-                        </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
-                        </div>
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
                         </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
                         </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
                         </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
-                        </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
-                        </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
-                        </div>
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
                         </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
                         </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
                         </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
-                        </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
-                        </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
-                        </div>
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
                         </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
                         </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
                         </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
-                        </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
-                        </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
-                        </div>
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
                         </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
                         </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
                         </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
 
-                      </li>
-                      <li class="teams-team-info">
-                        <div class="team-rating-box">
-                          <div class="team-position">
-                            <h3>#</h3>
-                            <h3>100</h3>
-                          </div>
-                          <div class="team-ept-points">
-                            <h3>19 200</h3>
-                          </div>
-                        </div>
-                        <div class="team-logo-name">
-                          <div class="team-logo">
-                              <img src="../resourses/spirit-logo-white.png">
-                          </div>
-                          <div class="team-name" href="#">
-                              <h3>TEAM SPIRIT</h3>
-                          </div>
-                        </div>
-                        <div class="team-roster">
-                          <h4>YATORO</h4>
-                          <h4>LARI</h4>
-                          <h4>COLLAPSE</h4>
-                          <h4>MIRA</h4>
-                          <h4>MIPOSHKA</h4>
-                        </div>
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
 
-                      </li>
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
+                        </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
+                        </div>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
+                        </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
 
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
+
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
+                        </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
+                        </div>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
+                        </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
+
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
+
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
+                        </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
+                        </div>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
+                        </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
+
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
+
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
+                        </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
+                        </div>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
+                        </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
+
+                    </a>
+                  </li><li class="teams-team-info">
+                    <a href="../pages/team.html">
+
+                      <div class="team-rating-box">
+                        <div class="team-position">
+                          <h3>#</h3>
+                          <h3>100</h3>
+                        </div>
+                        <div class="team-ept-points">
+                          <h3>19 200</h3>
+                        </div>
+                      </div>
+                      <div class="team-logo-name">
+                        <div class="team-logo">
+                            <img src="../resourses/spirit-logo-white.png">
+                        </div>
+                        <div class="team-name" href="#">
+                            <h3>TEAM SPIRIT</h3>
+                        </div>
+                      </div>
+                      <div class="team-roster">
+                        <h4>YATORO</h4>
+                        <h4>LARI</h4>
+                        <h4>COLLAPSE</h4>
+                        <h4>MIRA</h4>
+                        <h4>MIPOSHKA</h4>
+                      </div>
+
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

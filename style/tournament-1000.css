@@ -1,0 +1,409 @@
+@import url(constants.css);
+@import url(assets.css);
+
+
+
+/*
+    Страница
+*/
+
+.page-content
+{
+    width: 1000px;
+    height: 100%;
+    
+    padding-top: 74px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    position: relative;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+/*
+    Общие параметры
+*/
+
+
+
+
+/*
+    Шаблоны
+*/
+
+
+
+.page-name
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    width: 100%;
+    height: 64px;
+    padding: 10px 0px 10px 15px;
+    gap: 15px;
+}
+
+
+.page-name h2
+{
+    color: black;
+    text-align: center;
+    height: auto;
+    width: 690px;
+}
+
+.selected
+{
+    filter: invert();
+}
+
+#tournament-image
+{
+    position: absolute;
+    left: 40px;
+    top: calc(74px + 75px);
+    gap: 10px;
+    width: 300px;
+    height: 169px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #111111;
+}
+
+#tournament-info
+{
+    position: absolute;
+    left: calc(310px + 40px);
+    top: calc(74px + 75px);
+    gap: 15px;
+    width: 610px;
+    height: 169px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    background-color: #111111;
+}
+
+#tournament-participants
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(253px + 75px);
+    gap: 10px;
+    width: 610px;
+    height: 502px;
+    align-items: start;
+    justify-content: start;
+
+    background-color: #111111;
+}
+
+#tournament-result
+{
+    position: absolute;
+    left: calc(620px + 40px);
+    top: calc(253px + 75px);
+    gap: 10px;
+    width: 298px;
+    height: 502px;
+    align-items: start;
+    justify-content: start;
+
+    background-color: #111111;
+}
+
+#tournament-brackets
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(765px + 75px);
+    gap: 15px;
+    width: 920px;
+    height: 1561px;
+    align-items: start;
+    justify-content: start;
+
+    background-color: #111111;
+}
+
+.tournament-logo
+{
+    content: url("../resourses/tournament-logo-w200-h150.png");
+}
+
+.t-info-row
+{
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.t-info-cell
+{
+    width: 140px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-logo-w64-h64
+{
+    content: url("../resourses/spirit-logo-white.png");
+    width: 64px;
+    height: 64px;
+}
+
+.tp-card
+{
+    width: 136px;
+    height: 136px;
+    background-color: #343434;
+    gap: 10px;
+    padding: 10px;
+}
+
+.tp-logo-box
+{
+    width: 116px;
+    height: 64px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tp-name-country
+{
+    width: 116px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-logo-w89-h89
+{
+    width: 89px;
+    height: 89px;
+    content: url("../resourses/spirit-logo-white.png");
+}
+
+.tr-winner-card
+{
+    width: 100%;
+    height: 149px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tr-winner-card-text
+{
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tr-winner-logo
+{
+    width: 100%;
+    height: 109px;
+    padding: 10px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-logo-w19-h19
+{
+    width: 19px;
+    height: 19px;
+    content: url("../resourses/spirit-logo-white.png");
+}
+
+.tr-h-place
+{
+    width: 15px;
+}
+
+.tr-h-name
+{
+    width: 100px;
+}
+
+.tr-h-prize
+{
+    width: 110px;
+}
+
+.tr-result-card
+{
+    gap: 10px;
+}
+
+.tr-result-list, .tp-list
+{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tb-playoff
+{
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 646px;
+}
+
+.tb-playoff h3
+{
+    width: 100%;
+    height: 39px;
+}
+
+.play-off-image
+{
+    width: 1389px;
+    height: 597px;
+    content: url("../resourses/bracket-w1389-h597.png");
+}
+.play-off-image-box
+{
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.tb-groups-result
+{
+    width: 100%;
+    height: 330px;
+}
+
+.tb-group-result
+{
+    width: 445px;
+    height: 300px;
+}
+
+.tb-group-name
+{
+    width: 445px;
+    height: 39px;
+}
+
+.tb-group-result-names
+{
+    width: 445px;
+    height: 29px;
+}
+
+.gs-place
+{
+    width: 40px;
+    height: 19px;
+}
+.gs-teams
+{
+    width: 227px;
+    height: 19px;
+}
+.gs-matches
+{
+    width: 80px;
+    height: 19px;
+}
+.gs-maps
+{
+    width: 80px;
+    height: 19px;
+}
+
+.tb-group-name
+{
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.team-logo-w28-h28
+{
+    width: 28px;
+    height: 28px;
+    content: url("../resourses/spirit-logo-white.png");
+}
+
+.table-gs
+{
+    width: 445px;
+    height: 432px;
+}
+
+.table-gs td
+{
+    width: 48px;
+    height: 48px;
+
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.tb-groups-table
+{
+    width: 100%;
+    height: 496px;
+
+    background-color: #111111;
+}
+
+.tb-group-table
+{
+    width: 445px;
+    height: 496px;
+
+    background-color: #343434;
+}
+
+.gs-table-team-cell
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gs-top
+{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.gs-middle
+{
+    background-color: rgba(255, 255, 0, 0.3);
+}
+
+.gs-elim
+{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.tb-group-result h4
+{
+    text-align: center;
+}
+
+.tb-group-result-item
+{
+    height: 29px;
+    align-items: center;
+}

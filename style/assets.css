@@ -1,0 +1,235 @@
+/*
+основная страница
+*/
+body
+{
+    background-color: black;
+}
+main
+{
+    background-color: black;
+    width: 1000px;
+    height: 100%;
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
+}
+
+.page-content
+{
+    width: 1000px;
+    height: 100%;
+    
+    padding-top: 74px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+/*
+любой родительский блок
+*/
+
+.content-block
+{
+    padding: 10px;
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+}
+
+/*
+флаг и страна
+*/
+
+.country-full
+{
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+/*
+иконки ролей
+*/
+
+.role-pos5-icon-w16-h17
+{
+    content: url("../resourses/pos5-image16x17.png");
+    width: 16px;
+    height: 16px;
+}
+
+/*
+список героев
+*/
+
+.heroes-list
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+/*
+филтьтр по датам 7 14 30 дней
+*/
+
+.filter-buttons-block
+{
+    gap: 5px;
+}
+
+.filter-buttons-block div
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    width: auto;
+    height: 25px;
+    background-color: white;
+}
+
+.filter-block
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter-buttons-block h4
+{
+    color: rgb(0, 0, 0);
+}
+
+/*
+таблица матчей
+*/
+
+.download-pdf-box
+{
+    width: 230px;
+    height: 64px;
+    background-color: white;
+    z-index: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.download-pdf-box:hover
+{
+    filter: invert();
+}
+
+
+.pdf-w44-h44
+{
+    content: url("../resourses/pdf-w44-h44.png");
+}
+
+
+.download-pdf-box h4
+{
+    color: black;
+}
+
+.hamburger
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger-line
+{
+    width: 16px;
+    height: 3px;
+    background-color: black;
+}
+
+.skill-image-w24-h24
+{
+    width: 24px;
+    height: 24px;
+    content: url("../resourses/enchantress_impetus.webp");
+}
+
+.item-image-w34-h24
+{
+    width: 34px;
+    height: 24px;
+    content: url("../resourses/item-w24-h24.png");
+}
+
+.aspect-w16-h16
+{
+    width: 16px;
+    height: 16px;
+    content: url("../resourses/aspect.png");
+}
+
+.talent-w32-h32
+{
+    width: 32px;
+    height: 32px;
+    content: url("../resourses/talents.png");
+}
+
+.hero-icon-w57-h32
+{
+    width: 57px;
+    height: 32px;
+    content: url("../resourses/enchantress_horz.webp");
+}
+
+
+.gold-image
+{
+    width: 21px;
+    height: 13px;
+
+    content: url("../resourses/gold.png");
+}
+
+.player-photo-w84-h84
+{
+    width: 84px;
+    height: 84px;
+    content: url("../resourses/miposhka_face.png");
+}
+
+.country-w20-h15
+{
+    content: url("../resourses/flag20x15.png");
+    width: 20px;
+    height: 15px;
+}
+
+.titan-w84-h84
+{
+    content: url("../resourses/titan84x84.png");
+    width: 84px;
+    height: 84px;
+}
+
+.team-logo-w84-h84
+{
+    width: 84px;
+    height: 84px;
+    content: url("../resourses/spirit-logo-white.png");
+}

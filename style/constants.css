@@ -1,0 +1,113 @@
+html, body
+{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5
+{
+    color: white;
+    letter-spacing: 10%;
+    line-height: 100%;
+    margin: 0;
+}
+
+h1
+{
+    font-size: 48px;
+    font-weight: bold;
+    height: 29px;
+}
+
+h2
+{
+    font-size: 32px;
+    height: 39px;
+}
+
+h3
+{
+    font-size: 24px;
+}
+
+h4
+{
+    font-size: 16px;
+}
+
+h5
+{
+    font-size: 12px;
+    height: 19px;
+}
+
+*
+{
+    box-sizing:border-box;
+}
+
+@font-face
+{
+    font-family: "InterVariable", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('styles//fonts//InterVariable.woff2') format("woff2");
+}
+
+.fldir-row
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.fldir-clmn
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fl-wrap
+{
+    flex-wrap: wrap;
+}
+
+
+*::-webkit-scrollbar 
+{
+    width: 5px;
+    height: 10px;
+    background-color: #09090900;
+}
+
+*::-webkit-scrollbar-thumb 
+{
+    border-radius: 10px;
+    background-color:rgb(60, 60, 60);
+}
+
+*::-webkit-scrollbar-track 
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #090909;
+}
+  
+.persents-positive
+{
+    color: #00ff00;
+    font-weight: 700;
+}
+
+.persents-negative
+{
+    color: #ff0000;
+}
+
+.match-count
+{
+    color: #fff000;
+}

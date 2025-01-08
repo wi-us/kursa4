@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Player</title>
+
+    <meta charset="utf-8">
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style/header-1000.css" type="text/css"/ >
+    <link rel="stylesheet" href="../style/tournament-1000.css" type="text/css"/>
+  </head>
+  <header class="h-desktop">
+    <div id="h-box">
+      <img class="team-logo-w44-h44 black" href="#">
+      <nav class="nav-menu">
+        <ul>
+          <a href="../pages/players.html"><li class="nav-button"><h4>Игроки</h4></li></a>
+          <a href="../pages/tournaments.html"><li class="nav-button"><h4>Турниры</h4></li></a>
+          <a href="../pages/teams.html"><li class="nav-button"><h4>Команды</h4></li></a>
+          <a href="../pages/matches.html"><li class="nav-button"><h4>Тренировки</h4></li></a>
+        </ul>
+      </nav>
+      <a href="../pages/authorization.html"><img class="logout-w44-h44 black"></a>
+    </div>
+    <div id="h-box-mobile">
+      <div class="hamb-logo fldir-row">
+        <div class="hamburger">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        <img class="team-logo-w44-h44 black" href="#">
+      </div>
+      <div class="download-pdf-box">
+        <h4>Скачать статистику</h4>
+        <img class="pdf-w44-h44" href="#">
+      </div>
+    </div>
+  </header>
+  <body>
+    <main>
+      <div class="page-content" id="player-content">
+        <div class="page-name">
+          <div class="result fldir-row">
+            <div class="tournament-name-frame fldir-row">
+              <h2 class="tournament-name">THE INTERNATIONAL 2024</h2>
+            </div>
+          </div>
+          <div class="download-pdf-box" id="page-name-pdf">
+            <h4>Скачать статистику</h4>
+            <img class="pdf-w44-h44" href="#">
+          </div>
+        </div>
+        <section class="content-block fldir-clmn" id="tournament-image">
+          <img class="tournament-logo">
+        </section>
+        <section class="content-block fldir-clmn" id="tournament-info">
+          <div class="fldir-row t-info-row">
+            <div class="fldir-clmn t-info-cell">
+              <h4>Организатор:</h4>
+              <h4>Valve</h4>
+            </div>
+            <div class="fldir-clmn t-info-cell">
+              <h4>Призовой фонд:</h4>
+              <h4>$2 557 797</h4>
+            </div>
+            <div class="fldir-clmn t-info-cell">
+              <h4>Дата начала:</h4>
+              <h4>04.09.2024</h4>
+            </div>
+            <div class="fldir-clmn t-info-cell">
+              <h4>Дата окончания:</h4>
+              <h4>15.09.2024</h4>
+            </div>
+          </div>
+          <div class="fldir-row  t-info-row">
+            <div class="fldir-clmn t-info-cell">
+              <h4>Регион:</h4>
+              <div class="fldir-row country-full t-info-cell">
+                <img class="country-w20-h15">
+                <h4>Россия</h4>
+              </div>
+            </div>
+            <div class="fldir-clmn t-info-cell">
+              <h4>Тип:</h4>
+              <h4>Офлайн (LAN)</h4>
+            </div>
+            <div class="fldir-clmn t-info-cell">
+              <h4>Команд:</h4>
+              <h4>16</h4>
+            </div>
+            <div class="fldir-clmn t-info-cell">
+              <h4>Матчей:</h4>
+              <h4>123</h4>
+            </div>
+          </div>
+          
+          
+        </section>
+        <section class="content-block fldir-clmn" id="tournament-participants">
+          <h3>Участники</h3>
+          <div class="tp-list fldir-row fl-wrap">
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+            <div class="tp-card fldir-clmn">
+              <div class="tp-logo-box">
+                <img class="team-logo-w64-h64">
+              </div>
+              <div class="fldir-clmn tp-name-country">
+                <h4>Team Spirit</h4>
+                <div class="fldir-row country-full t-info-cell">
+                  <img class="country-w20-h15">
+                  <h5>Россия</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content-block fldir-clmn" id="tournament-result">
+          <h3>Победители</h3>
+          <div class="tr-winner-card fldir-clmn">
+            <div class="tr-winner-logo">
+              <img class="team-logo-w89-h89">
+            </div>
+            <div class="tr-winner-card-text fldir-row">
+              <h3>#1</h3>
+              <h3>Team Spirit</h3>
+            </div>
+          </div>
+          
+          <div class="tr-result-list fldir-clmn">
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+            <div class="tr-result-card fldir-row">
+              <h4 class="tr-h-place">1</h4>
+              <img class="team-logo-w19-h19">
+              <h4 class="tr-h-name">Team Spirit</h4>
+              <h4 class="tr-h-prize">$ 1 002 999</h4>
+            </div>
+          </div>
+        </section>
+        <section class="content-block fldir-clmn" id="tournament-brackets">
+          <h3>Победители</h3>
+          <div class="tb-playoff fldir-clmn">
+            <h3>Play-off</h3>
+            <div class="play-off-image-box">
+              <img class="play-off-image">
+            </div>
+          </div>
+          <div class="tb-group-stage fldir-clmn">
+            <div class="tb-groups-result fldir-row">
+              <div class="tb-group-result fldir-clmn">
+                <h3 class="tb-group-name">Группа А</h3>
+                <div class="tb-group-result-names fldir-row">
+                  <h4 class="gs-place"> </h4>
+                  <h4 class="gs-teams">Команда</h4>
+                  <h4 class="gs-matches">Матчи</h4>
+                  <h4 class="gs-maps">Карты</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-top">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-top">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-top">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-top">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-middle">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-middle">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-elim">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-elim">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+              </div>
+              <div class="tb-group-result fldir-clmn">
+                <h3 class="tb-group-name">Группа А</h3>
+                <div class="tb-group-result-names fldir-row">
+                  <h4 class="gs-place"> </h4>
+                  <h4 class="gs-teams">Команда</h4>
+                  <h4 class="gs-matches">Матчи</h4>
+                  <h4 class="gs-maps">Карты</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-top">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-top">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-top">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-top">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-middle">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-middle">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-elim">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+                <div class="tb-group-result-item fldir-row gs-elim">
+                  <h4 class="gs-place">1</h4>
+                  <h4 class="gs-teams">Spirit</h4>
+                  <h4 class="gs-matches">2-1-0</h4>
+                  <h4 class="gs-maps">5-1</h4>
+                </div>
+              </div>
+            </div>
+            <div class="tb-groups-table fldir-row">
+              <div class="tb-group-table fldir-clmn">
+                <h3 class="tb-group-name">Группа А</h3>
+                <table class="table-gs">
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tb-group-table fldir-clmn">
+                <h3 class="tb-group-name">Группа B</h3>
+                <table class="table-gs">
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                       
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <img class="team-logo-w28-h28">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="gs-table-team-cell">
+                        <h4>2-1</h4>
+                        <h5>04.09</h5>
+                      </div>
+                    </td>
+                    <td>
+                      
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Player</title>
+    <title>Match</title>
 
     <meta charset="utf-8">
     <link rel="icon" type="image/ico" href="favicon.ico"/>
@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../style/header-1000.css" type="text/css"/ >
     <link rel="stylesheet" href="../style/match-1000.css" type="text/css"/>
   </head>
@@ -27,9 +28,10 @@
     </div>
     <div id="h-box-mobile">
       <div class="hamb-logo fldir-row">
-        <div class="hamburger">
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
+        <div class="icon nav-icon-5">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <img class="team-logo-w44-h44 black" href="#">
       </div>
@@ -85,19 +87,19 @@
         </div>
         <section class="content-block fldir-clmn" id="match-tech-info">
           <div class="mti-text fldir-row">
-            <h4>ID матча:</h4>
+            <h4 class="mti-title">ID матча:</h4>
             <h4>88879879</h4>
           </div>
           <div class="mti-text fldir-row">
-            <h4>Сервер:</h4>
+            <h4 class="mti-title">Сервер:</h4>
             <h4>Россия</h4>
           </div>
           <div class="mti-text fldir-row">
-            <h4>Дата:</h4>
+            <h4 class="mti-title">Дата:</h4>
             <h4>12 сент. 2024 г., 18:31</h4>
           </div>
           <div class="mti-text fldir-row">
-            <h4>Рейтинг:</h4>
+            <h4 class="mti-title">Рейтинг:</h4>
             <h4>Титан</h4>
           </div>
         </section>
@@ -352,7 +354,7 @@
           <img src="../resourses/map.png">
         </div>
         <div id="match-graphic">
-          <img src="../resourses/image 25.png">
+          <img class="graphic-image" src="../resourses/image 25.png">
         </div>
         <section class="content-block fldir-row" id="match-items-skills-stats">
           <div class="buid-team-clmn fldir-clmn">
@@ -978,6 +980,8 @@
 
         </section>
       </div>
+      
     </main>
+    <script src="../scripts/scripts.js"></script>
   </body>
 </html>

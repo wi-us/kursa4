@@ -18,12 +18,17 @@
 
     position: relative;
 }
-
+main
+{
+    width: 1000px;
+}
 body
 {
     display: flex;
     justify-content: center;
     align-items: start;
+
+    width: 100%;
 }
 /*
     Общие параметры
@@ -62,7 +67,10 @@ body
     Шаблоны
 */
 
-
+header{
+    width: 100%;
+    height: 84px;
+}
 
 .page-name
 {
@@ -82,15 +90,6 @@ body
     height: 100%;
     justify-content: start;
     align-items: center;
-}
-.score
-{
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-
 }
 
 .page-name h1
@@ -490,10 +489,18 @@ body
 {
     gap: 1px;
 }
-
 .team-stats-block
 {
+    gap: 15px;
+}
+.team-stats-block, .team-stats-list
+{
     gap: 10px;
+}
+
+.team-stats-list
+{
+    display: flex;
 }
 
 .stats-title

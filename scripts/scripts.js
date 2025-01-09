@@ -34,6 +34,7 @@ function AutoScale()
     sheets[4].href = "../style/header-360.css";
     sheets[5].href = `../style/${title}-360.css`;
     }
+    current_res = width;
 }
 
 const icons = document.querySelectorAll('.icon');

@@ -6,24 +6,31 @@
 /*
     Страница
 */
-
-.page-content
-{
-    width: 768px;
-    height: 100%;
-    
-    padding-top: 74px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    position: relative;
-}
-
 body
 {
     display: flex;
     justify-content: center;
     align-items: start;
+
+    width: 100%;
+}
+
+main
+{
+    width: 768px;
+}
+
+.page-content
+{
+    position: relative;
+    top: 74px;
+
+    width: 100%;
+    height: 100;
+    
+    padding-top: 0;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 /*
     Общие параметры
@@ -62,154 +69,241 @@ body
     Шаблоны
 */
 
-
-
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-
-    width: 100%;
-}
-
-main
-{
-    width: 768px;
-}
-
-.page-content
-{
-    position: relative;
-    top: 74px;
-
-    width: 718px;
-    height: 1635px;
-    
-    padding-top: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
 header{
     width: 100%;
     height: 84px;
 }
+
 .page-name
 {
+
     position: absolute;
-    
-    left: calc(0px + 25px);
-    top: calc(0px + 15px);
+    left: calc(25px + 0px);
+    top: calc(0px + 25px);
 
-    width: 715px;
+    width: 718px;
     height: 64px;
-}
 
-.page-name h4
-{
-    display: none;
-}
-
-.page-name
-{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
 
+    padding: 10px 0px 10px 15px;
+    gap: 15px;
+}
+.result
+{
     width: 100%;
-    height: 64px;
-    order: 0;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
 }
 
 .page-name h1
 {
     color: black;
     text-align: center;
-    width: calc(100% - 230px);
     height: auto;
+    width: 100%;
 }
 
 #team-stats
 {
     position: absolute;
-    
     left: calc(0 + 0px);
-    top: calc(153px + 99px);
+    top: calc(153px - 54px);
 
     width: 414px;
     height: 289px;
 }
-#team-ftournaments
-{
-    position: absolute;
-    
-    left: calc(424px + 0px);
-    top: calc(153px - 99px);
 
-    width: 294px;
-    height: 289px;
-}
 #team-roster
 {
     position: absolute;
-    
     left: calc(0 + 0px);
-    top: calc(452px - 99px);
+    top: calc(452px - 54px);
 
     width: 718px;
     height: 944px;
 }
+
+#team-ftournaments
+{
+    position: absolute;
+    left: calc(424px + 25px);
+    top: calc(153px - 54px);
+
+    width: 294px;
+    height: 289px;
+}
+
 #team-matches
 {
     position: absolute;
-    
     left: calc(0 + 0px);
-    top: calc(1406px - 99px);
+    top: calc(1406px - 54px);
 
     width: 718px;
     height: 440px;
 }
+
 #team-heroes
 {
     position: absolute;
-    
-    left: calc(1px + 0px);
-    top: calc(1856px - 99px);
+    left: calc(25px + 0px);
+    top: calc(1856px - 54px);
 
-    width: 716px;
+    width: 718px;
     height: 259px;
 }
+
 #team-heroes-by-player-block
 {
     position: absolute;
-    
-    left: calc(1px + 0px);
-    top: calc(2125px - 99px);
+    left: calc(25px + 0px);
+    top: calc(2125px - 54px);
 
-    width: 716px;
+    width: 718px;
     height: 375px;
+
+    
 }
+
 #team-wardmap
 {
     position: absolute;
-    
     left: calc(0 + 0px);
-    top: calc(2510px - 99px);
+    top: calc(2510px - 54px);
 
     width: 718px;
     height: 418px;
 }
+
 #team-wardmap-7-00
 {
     position: absolute;
-    
     left: calc(0 + 0px);
-    top: calc(2938px - 99px);
+    top: calc(2938px - 54px);
 
     width: 718px;
     height: 388px;
+}
+
+.maps
+{
+    position: absolute;
+    left: 40px;
+    top: 139px;
+
+    width: 920px;
+    height: 54px;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.map
+{
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+
+    background-color: #090909;
+}
+
+.map img
+{
+    filter: invert();
+}
+
+.map:hover
+{
+    filter: invert();
+}
+
+.selected
+{
+    filter: invert();
+}
+
+#match-tech-info
+{
+    position: absolute;
+    left: 40px;
+    top: calc(134px + 69px);
+    gap: 15px;
+    width: 300px;
+    height: 141px;
+    align-items: start;
+    justify-content: start;
+}
+
+.mti-text
+{
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#match-heroes
+{
+    position: absolute;
+    left: 350px;
+    top: calc(134px + 69px);
+
+    width: 610px;
+    height: 455px;
+
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+
+}
+
+#match-map
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(285px + 69px);
+
+    width: 300px;
+    height: 304px;
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+}
+
+
+#match-graphic
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(599px + 69px);
+
+    width: 920px;
+    height: 280px;
+        background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
+}
+
+#match-items-skills-stats
+{
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(889px + 69px);
+
+    width: 920px;
+    height: 675px;
+    background-color: #090909;
+    gap: 10px;
+
+    border: 1px solid rgb(30, 30, 30);
 }
 
 .gold-image
@@ -405,8 +499,13 @@ header{
 
 .team-stats-block
 {
+    gap: 15px;
+}
+.team-stats-block, .team-stats-list
+{
     gap: 10px;
 }
+
 
 .stats-title
 {
@@ -607,14 +706,12 @@ tr h4
 
 .team-name-frame
 {
-    width: 100%;
-    height: 100%;
+    width: 1000%;
 }
 
 .team-name
 {
-    width: 200px;
-    height: 44px;
+    width: 100%;
 }
 .ranking
 {

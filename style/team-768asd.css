@@ -38,7 +38,7 @@ header{
     position: absolute;
     
     left: calc(1.5px + 0px);
-    top: calc(79px - 99px);
+    top: calc(79px - 54px);
 
     width: 715px;
     height: 64px;
@@ -48,7 +48,7 @@ header{
     position: absolute;
     
     left: calc(0 + 0px);
-    top: calc(153px + 99px);
+    top: calc(153px - 54px);
 
     width: 414px;
     height: 289px;
@@ -58,7 +58,7 @@ header{
     position: absolute;
     
     left: calc(424px + 0px);
-    top: calc(153px - 99px);
+    top: calc(153px - 54px);
 
     width: 294px;
     height: 289px;
@@ -68,7 +68,7 @@ header{
     position: absolute;
     
     left: calc(0 + 0px);
-    top: calc(452px - 99px);
+    top: calc(452px - 54px);
 
     width: 718px;
     height: 944px;
@@ -78,7 +78,7 @@ header{
     position: absolute;
     
     left: calc(0 + 0px);
-    top: calc(1406px - 99px);
+    top: calc(1406px - 54px);
 
     width: 718px;
     height: 440px;
@@ -88,7 +88,7 @@ header{
     position: absolute;
     
     left: calc(1px + 0px);
-    top: calc(1856px - 99px);
+    top: calc(1856px - 54px);
 
     width: 716px;
     height: 259px;
@@ -98,7 +98,7 @@ header{
     position: absolute;
     
     left: calc(1px + 0px);
-    top: calc(2125px - 99px);
+    top: calc(2125px - 54px);
 
     width: 716px;
     height: 375px;
@@ -108,7 +108,7 @@ header{
     position: absolute;
     
     left: calc(0 + 0px);
-    top: calc(2510px - 99px);
+    top: calc(2510px - 54px);
 
     width: 718px;
     height: 418px;
@@ -118,7 +118,7 @@ header{
     position: absolute;
     
     left: calc(0 + 0px);
-    top: calc(2938px - 99px);
+    top: calc(2938px - 54px);
 
     width: 718px;
     height: 388px;

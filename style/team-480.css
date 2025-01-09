@@ -1,0 +1,94 @@
+header{
+    width: 480px;
+    height: 84px;
+}
+.page-name
+{
+    position: absolute;
+    
+    left: calc(0 + 0px);
+    top: calc(0 - 99px);
+
+    width: 430px;
+    height: 96px;
+}
+#team-stats
+{
+    position: absolute;
+    
+    left: calc(25px + 0px);
+    top: calc(190px - 99px);
+
+    width: 430px;
+    height: 289px;
+}
+#team-ftournaments
+{
+    position: absolute;
+    
+    left: calc(25px + 0px);
+    top: calc(489px - 99px);
+
+    width: 430px;
+    height: 126px;
+}
+#team-roster
+{
+    position: absolute;
+    
+    left: calc(25px + 0px);
+    top: calc(625px - 99px);
+
+    width: 431px;
+    height: 944px;
+}
+#team-matches
+{
+    position: absolute;
+    
+    left: calc(25px + 0px);
+    top: calc(1579px - 99px);
+
+    width: 430px;
+    height: 440px;
+}
+#team-heroes
+{
+    position: absolute;
+    
+    left: calc(25px + 0px);
+    top: calc(2029px - 99px);
+
+    width: 430px;
+    height: 499px;
+}
+#team-heroes-by-player-block
+{
+    position: absolute;
+    
+    left: calc(25px + 0px);
+    top: calc(2538px - 99px);
+
+    width: 430px;
+    height: 406px;
+}
+#team-wardmap
+{
+    position: absolute;
+    
+    left: calc(25px + 0px);
+    top: calc(2954px - 99px);
+
+    width: 430px;
+    height: 757px;
+}
+#team-wardmap-7-00
+{
+    position: absolute;
+    
+    left: calc(25px + 0px);
+    top: calc(3721px - 99px);
+
+    width: 430px;
+    height: 727px;
+}

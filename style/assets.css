@@ -80,6 +80,7 @@ main
     height: 100%;
     gap: 10px;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /*
@@ -232,4 +233,15 @@ main
     width: 84px;
     height: 84px;
     content: url("../resourses/spirit-logo-white.png");
+}
+
+.matches-list
+{
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#player-matches
+{
+    overflow-x: hidden;
 }

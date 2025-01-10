@@ -95,7 +95,6 @@ main
 .player-card
 {
     width: 100%;
-    height: 100px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -119,31 +118,29 @@ main
     top: 149px
 }
 
-.team-ranking, .team-name-logo, .team-roster
+.hero-w74-h40
 {
-    justify-content: center;
-    align-items: center;
+    width: 74px;
+    height: 40px;
+    content: url("../resourses/enchantress_horz.webp");
 }
 
-.team-ranking
+.hero-w32-h32
 {
-    width: 100px;
-    height: 87px;
+    display: none;
+
+    width: 32px;
+    height: 32px;
+    content: url("../resourses/hero32x32.png");
 }
 
-.team-name-logo
+.match-info
 {
-    width: 332px;
-    height: 92px;
-}
-
-.team-name-logo h2
-{
-    height: 40%;
-}
-
-.team-roster
-{
-    width: 50%;
+    height: 220px;
     justify-content: space-between;
+}
+
+.hero-player h3
+{
+    font-size: 16px;
 }

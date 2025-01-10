@@ -9,11 +9,11 @@
 
 .page-content
 {
-    width: 768px;
+    width: 360px;
     height: 100%;
     
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     flex-direction: column;
     position: relative;
@@ -95,7 +95,6 @@ main
 .player-card
 {
     width: 100%;
-    height: 100px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -109,7 +108,7 @@ main
 
 #players-player
 {
-    width: 718px;
+    width: 320px;
     padding: 10px 10px;
 
     position: absolute;
@@ -119,31 +118,76 @@ main
     top: 149px
 }
 
-.team-ranking, .team-name-logo, .team-roster
+.hero-w74-h40
 {
+    display: none;
+
+    width: 74px;
+    height: 40px;
+    content: url("../resourses/enchantress_horz.webp");
+}
+
+.hero-w32-h32
+{
+    
+
+    width: 32px;
+    height: 32px;
+    content: url("../resourses/hero32x32.png");
+}
+
+.match-info
+{
+    height: 220px;
+    justify-content: space-between;
+}
+
+.hero-player h3
+{
+    display: none;
+    font-size: 16px;
+}
+
+.match-info
+{
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: auto;
+}
+
+.picks
+{
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.team-ranking
+.m-id
 {
-    width: 100px;
-    height: 87px;
+    display: none;
 }
 
-.team-name-logo
+.download-pdf-box
 {
-    width: 332px;
-    height: 92px;
+    display: none;
 }
 
-.team-name-logo h2
+.picks-dire, .picks-radiant
 {
-    height: 40%;
+    flex-direction: row;
 }
 
-.team-roster
+.result-enemy h2
 {
-    width: 50%;
-    justify-content: space-between;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.date-id
+{
+    position: absolute;
+    right: 20px;
 }

@@ -410,3 +410,7 @@ tr h4
     display: none;
 }
 
+.table-matches-kda h4
+{
+    white-space: nowrap;
+}

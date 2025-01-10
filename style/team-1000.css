@@ -11,8 +11,8 @@
 {
     width: 1000px;
     height: 100%;
-    
-    padding-top: 74px;
+    top: 5px;
+    padding-top: 69px;
     padding-left: 40px;
     padding-right: 40px;
 
@@ -67,10 +67,7 @@ body
     Шаблоны
 */
 
-header{
-    width: 100%;
-    height: 84px;
-}
+
 
 .page-name
 {

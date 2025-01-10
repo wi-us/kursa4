@@ -87,6 +87,12 @@ main
 филтьтр по датам 7 14 30 дней
 */
 
+.filter-buttons-block div:hover
+{
+    filter: invert();
+    
+}
+
 .filter-buttons-block
 {
     gap: 5px;
@@ -101,6 +107,7 @@ main
     width: auto;
     height: 25px;
     background-color: white;
+    border: 1px solid black;
 }
 
 .filter-block

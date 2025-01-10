@@ -28,7 +28,7 @@ main
 .page-content
 {
     position: relative;
-    top: 0px;
+    top: -5px;
 
     width: 100%;
     height: 100%;
@@ -604,6 +604,11 @@ tr h4
     height: 50px;
 }
 
+.table-matches-kda h4
+{
+    white-space: nowrap;
+}
+
 .table-matches-enemy
 {
     width: 82px;
@@ -645,7 +650,7 @@ tr h4
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: scroll;
     
 }
 .team-heroes-by-player tr
@@ -698,8 +703,8 @@ tr h4
 
 .wardmap
 {
-    width: 375px;
-    height: 375px;
+    width: 300px;
+    height: 300px;
     content: url("../resourses/wardmap-player.png");
 }
 
@@ -739,4 +744,9 @@ tr h4
 #page-name-pdf
 {
     display: none;
+}
+
+.table-headers
+{
+    width: 908px;
 }

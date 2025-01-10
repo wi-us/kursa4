@@ -90,6 +90,8 @@ main
     text-align: center;
     height: auto;
     width: 690px;
+
+    font-size: 32px;
 }
 
 .player-card

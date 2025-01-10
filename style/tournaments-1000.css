@@ -114,7 +114,7 @@ body
 .t-tier-box
 {
     width: 120px;
-    height: 60px;
+    height: 30px;
 }
 .rotate_-90
 {
@@ -125,6 +125,11 @@ body
 {
     width: 400px;
     height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
 }
 
 .t-name, .t-info
@@ -136,6 +141,8 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
 }
 
 .t-name h2

@@ -107,6 +107,8 @@ main
     text-align: center;
     height: auto;
     width: 100%;
+
+    font-size: 32px;
 }
 
 #team-stats

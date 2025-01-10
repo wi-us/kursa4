@@ -229,5 +229,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 
 .search-box:hover
 {
-    background-color: #923333;
+    background-color: #000000;
 }
+
+

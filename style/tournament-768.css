@@ -7,24 +7,34 @@
     Страница
 */
 
-.page-content
-{
-    width: 1000px;
-    height: 100%;
-    
-    padding-top: 74px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    position: relative;
-}
-
 body
 {
     display: flex;
     justify-content: center;
     align-items: start;
+
+    width: 100%;
 }
+
+main
+{
+    width: 768px;
+}
+
+
+.page-content
+{
+    position: relative;
+    top: 17px;
+
+    width: 768px;
+    height: 100%;
+    
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 /*
     Общие параметры
 */
@@ -37,16 +47,26 @@ body
 */
 
 
+header{
+    width: 100%;
+    height: 84px;
+}
+
 
 .page-name
 {
+    position: absolute;
+    left: calc(0px + 40px);
+    top: calc(0px + 75px);
+
+    width: 718px;
+    height: 64px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
 
-    width: 100%;
-    height: 64px;
     padding: 10px 0px 10px 15px;
     gap: 15px;
 }
@@ -57,7 +77,7 @@ body
     color: black;
     text-align: center;
     height: auto;
-    width: 690px;
+    width: 100%;
 }
 
 .selected
@@ -68,10 +88,10 @@ body
 #tournament-image
 {
     position: absolute;
-    left: 40px;
+    left: calc(0px + 40px);
     top: calc(74px + 75px);
     gap: 10px;
-    width: 300px;
+    width: 354px;
     height: 169px;
     align-items: center;
     justify-content: center;
@@ -82,11 +102,11 @@ body
 #tournament-info
 {
     position: absolute;
-    left: calc(310px + 40px);
+    left: calc(364px + 40px);
     top: calc(74px + 75px);
     gap: 15px;
-    width: 610px;
-    height: 169px;
+    width: 354px;
+    height: 272px;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -98,10 +118,10 @@ body
 {
     position: absolute;
     left: calc(0px + 40px);
-    top: calc(253px + 75px);
+    top: calc(243px + 75px);
     gap: 10px;
-    width: 610px;
-    height: 502px;
+    width: 354px;
+    height: 615px;
     align-items: start;
     justify-content: start;
 
@@ -111,10 +131,10 @@ body
 #tournament-result
 {
     position: absolute;
-    left: calc(620px + 40px);
-    top: calc(253px + 75px);
+    left: calc(364px + 40px);
+    top: calc(356px + 75px);
     gap: 10px;
-    width: 298px;
+    width: 354px;
     height: 502px;
     align-items: start;
     justify-content: start;
@@ -126,10 +146,10 @@ body
 {
     position: absolute;
     left: calc(0px + 40px);
-    top: calc(765px + 75px);
+    top: calc(868px + 75px);
     gap: 15px;
-    width: 920px;
-    height: 1561px;
+    width: 718px;
+    height: 1431px;
     align-items: start;
     justify-content: start;
 
@@ -146,7 +166,14 @@ body
     justify-content: start;
     align-items: center;
     gap: 15px;
-    width: 100%;
+    width: 50%;
+
+    flex-direction: column;
+}
+
+#tournament-info
+{
+    flex-wrap: wrap;
 }
 
 .t-info-cell
@@ -259,7 +286,22 @@ body
 {
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
+
+#tournament-result
+{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tp-list
+{
+    justify-content: center;
+    align-items: center;
+}
+
 
 .tb-playoff
 {
@@ -288,26 +330,27 @@ body
 }
 .tb-groups-result
 {
-    width: 100%;
-    height: 330px;
+    width: 698px;
+    height: 300px;
 }
 
 .tb-group-result
 {
-    width: 445px;
+    width: 344px;
     height: 300px;
 }
 
 .tb-group-name
 {
-    width: 445px;
+    width: 344px;
     height: 29px;
     padding: 5px;
+    text-align: center;
 }
 
 .tb-group-result-names
 {
-    width: 445px;
+    width: 344px;
     height: 29px;
 }
 
@@ -348,17 +391,28 @@ body
 
 .table-gs
 {
-    width: 445px;
-    height: 432px;
+    width: 344px;
+    height: 315px;
 }
 
 .table-gs td
 {
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
 
     background-color: rgb(0, 0, 0);
     border: 1px solid black;
+}
+
+.team-logo-w28-h28
+{
+    width: 20px;
+    height: 20px;
+}
+
+.table-gs td h5
+{
+    display: none;
 }
 
 .tb-groups-table
@@ -369,12 +423,21 @@ body
     background-color: #111111;
 }
 
-.tb-group-table
+.tb-group-stage
 {
-    width: 445px;
-    height: 496px;
+    width: 698px;
+    height: 673px;
 
-    background-color: #343434;
+    display: flex;
+    gap: 15px;
+}
+
+.tb-group-table, .tb-group-result
+{
+    width: 344px;
+    height: 100%;
+
+    background-color: #111111;
 }
 
 .gs-table-team-cell

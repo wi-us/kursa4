@@ -1,0 +1,141 @@
+@import url(constants.css);
+@import url(assets.css);
+
+
+
+/*
+    Страница
+*/
+
+.page-content
+{
+    width: 1000px;
+    height: 100%;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+
+    flex-direction: column;
+    position: relative;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/*
+    Общие параметры
+*/
+
+
+.player-photo-w84-h84
+{
+    width: 84px;
+    height: 84px;
+    content: url("../resourses/miposhka_face.png");
+}
+
+.country-w20-h15
+{
+    content: url("../resourses/flag20x15.png");
+    width: 20px;
+    height: 15px;
+}
+
+.titan-w84-h84
+{
+    content: url("../resourses/titan84x84.png");
+    width: 84px;
+    height: 84px;
+}
+
+.team-logo-w64-h64
+{
+    width: 64px;
+    height: 64px;
+    content: url("../resourses/spirit-logo-white.png");
+}
+
+/*
+    Шаблоны
+*/
+
+
+
+.page-name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    width: 920px;
+    height: 64px;
+}
+
+.page-name h1
+{
+    color: black;
+    text-align: center;
+    height: auto;
+    width: 690px;
+}
+
+.player-card
+{
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.fldir-row
+{
+    align-items: center;
+}   
+
+#players-player
+{
+    width: 920px;
+    padding: 10px 10px;
+
+    position: absolute;
+
+    gap: 10px;
+
+    top: 149px
+}
+
+.team-ranking, .team-name-logo, .team-roster
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.team-ranking
+{
+    width: 100px;
+    height: 87px;
+}
+
+.team-name-logo
+{
+    width: 332px;
+    height: 92px;
+}
+
+.team-name-logo h2
+{
+    height: 40%;
+}
+
+.team-roster
+{
+    width: 50%;
+    justify-content: space-between;
+}

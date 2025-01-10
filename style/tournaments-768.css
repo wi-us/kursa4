@@ -1,0 +1,166 @@
+@import url(constants.css);
+@import url(assets.css);
+
+
+
+/*
+    Страница
+*/
+
+.page-content
+{
+    width: 768px;
+    height: 100%;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+
+    flex-direction: column;
+    position: relative;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+main
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+    Общие параметры
+*/
+
+
+.player-photo-w84-h84
+{
+    width: 84px;
+    height: 84px;
+    content: url("../resourses/miposhka_face.png");
+}
+
+.country-w20-h15
+{
+    content: url("../resourses/flag20x15.png");
+    width: 20px;
+    height: 15px;
+}
+
+.titan-w84-h84
+{
+    content: url("../resourses/titan84x84.png");
+    width: 84px;
+    height: 84px;
+}
+
+.team-logo-w64-h64
+{
+    width: 64px;
+    height: 64px;
+    content: url("../resourses/spirit-logo-white.png");
+}
+
+/*
+    Шаблоны
+*/
+
+
+
+.page-name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    width: 718px;
+    height: 64px;
+}
+
+.page-name h1
+{
+    color: black;
+    text-align: center;
+    height: auto;
+    width: 690px;
+}
+
+.player-card
+{
+    width: 100%;
+    height: 180px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.fldir-row
+{
+    align-items: center;
+}   
+
+#players-player
+{
+    width: 718px;
+    padding: 10px 10px;
+
+    position: absolute;
+
+    gap: 10px;
+
+    top: 149px
+}
+
+.t-tier-box
+{
+    width: 120px;
+    height: 60px;
+}
+.rotate_-90
+{
+    transform: rotate(-90deg);
+}
+
+.t-info-box
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-name, .t-info
+{
+    width: 100%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-name h2
+{
+    color: #fff000;
+    font-weight: bold;
+}
+
+.t-banner-w373-h110
+{
+    display: none;
+    width: 373px;
+    height: 150px;
+
+    content: url("../resourses/banner.png");
+}
